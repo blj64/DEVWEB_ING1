@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(27,27,27);
+}
+
+#header {
+    background-color: rgb(41,41,41);
+}
+h1 {
+    text-align:inherit;
+}
+.nav-link {
+    background-color: rgb(255,163,26);
+    color: black;
+    text-decoration: none;
+    text-underline-offset: ;
+}
+
+#white {
+    color: white;
+    font-weight: bold;
+}
+
+#orange {
+    color: black;
+    background-color: rgb(255,163,26);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+
+#main-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+#header { grid-area: 1 / 1 / 2 / 5; }
+#menu { grid-area: 2 / 1 / 5 / 2;
+        position: ; }
+#main { grid-area: 2 / 2 / 5 / 5; }
+#footer { grid-area: 5 / 1 / 6 / 5; }
+    
