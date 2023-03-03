@@ -4,6 +4,12 @@ body {
     font-weight: bold;
     color: white;
 }
+
+.aligned {
+    display: inline-block;
+    text-align: center;
+}   
+
 #head-line {
     color: white;
     background-color: black ;
