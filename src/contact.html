@@ -1,26 +1,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-
-    <title>HS Songs</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/index.js"></script>
+    <title>Contact</title>
 </head>
 <body>
     <div id="main-page"> 
-        <header id="header">
-            <img src="" alt="logo">
-            <h1><span id="white">Light </span><span id="orange">Weight</span></h1>
-            <nav>
-                <a href="index.html"><div class="nav-link">HOME</div></a>
-                <a href="./src/remix.html"><div class="nav-link">SONGS</div></a>
-                <a href="./src/playlist.html"><div class="nav-link">PLAYLIST</div></a>
-                <a href="./src/goodies.html"><div class="nav-link">MERCH</div></a>
-                <a href="./src/contact.html"><div class="nav-link">CONTACT</div></a>
-            </nav>
-        </header>
-    
-
-        
+        <!-- HEADER A RAJOUTER-->
         <section id="main">
             
             <img src="contactLogo.png" width="80px" height="80px" alt="lettre">
@@ -28,23 +15,19 @@
             <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
 
             <form action="">
-                <b><label for="prenom">Prénom:</label></b><br>
-                <input type="text" id="prenom" name="prenom"><br>
-                <b><label for="nom">Nom:</label></b><br>
-                <input type="text" id="nom" name="nom"><br>
-                <b><label for="objet">Objet:</label></b><br>
-                <input type="text" id="objet" name="objet"><br>
+                <b><label for="prenom">Prénom:</label></b>
+                <input type="text" id="prenom" class="input-bar" name="prenom"><br><br>
+                <b><label for="nom">Nom:</label></b>
+                <input type="text" id="nom" class="input-bar" name="nom"><br><br>
+                <b><label for="objet">Objet:</label></b>
+                <input type="text" id="objet" class="input-bar" name="objet"><br><br>
                 <b><label for="message">Contenu:</label></b><br>
-                <input type="text" id="message" name="message"><br>
+                <textarea type="text" cols="50" rows="5" id="message" class="input-bar" name="message"></textarea><br>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Envoyer">
               </form> 
         </section>
-    
-        <footer id="footer">
-            <span id="copyright">Copyright Société RockHub</span><br>
-            <span id="footer-text">Welcome to Rock Hub</span>
-        </footer>
+        <!-- FOOTER A RAJOUTER-->
     </div>
 </body>
 </html>

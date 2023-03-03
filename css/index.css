@@ -55,6 +55,10 @@ nav {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+
+textarea {
+    resize: none;
+}
     
 #header { grid-area: 1 / 1 / 2 / 5; }
 #menu { grid-area: 2 / 1 / 5 / 2;
