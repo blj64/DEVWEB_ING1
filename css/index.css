@@ -1,14 +1,35 @@
 body {
     background-color: rgb(27,27,27);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
 }
-
+#head-line {
+    color: white;
+    background-color: black ;
+    text-align: center;
+    padding: 3px;
+}
 #header {
     background-color: rgb(41,41,41);
 }
 h1 {
     text-align:inherit;
 }
+#search-bar {
+    display: flex;
+}
+#search-logo {
+    background-color: rgb(255, 163, 26);
+    border-radius: 5px;
+    padding: 3px;
+    color: black;
+}
+nav {
+    display: flex;
+}
 .nav-link {
+    margin: 5px;
     background-color: rgb(255,163,26);
     color: black;
     text-decoration: none;
@@ -16,16 +37,14 @@ h1 {
 }
 
 #white {
-    color: white;
-    font-weight: bold;
 }
 
 #orange {
     color: black;
     background-color: rgb(255,163,26);
     border-radius: 5px;
-    font-weight: bold;
-    padding: 3px;
+    
+        padding: 3px;
 }
 
 
