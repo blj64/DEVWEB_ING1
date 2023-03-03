@@ -4,15 +4,6 @@ body {
     font-weight: bold;
     color: white;
 }
-
-
-
-
-
-#header {
-    padding-left: 30px;
-    background-color: rgb(41,41,41);
-}
 #head-line {
     color: white;
     background-color: black ;
@@ -69,16 +60,37 @@ a:link, a:visited {
     border-bottom: 2px solid;
     padding: 7px;
 }
-.nav-link {
-    border-color: rgba(255, 163, 26, 0);
-    border-radius: 2px;
 
+#orange {
+    color: black;
+    background-color: rgb(255,163,26);
+    border-radius: 5px;
+    
+        padding: 3px;
 }
-.nav-link:hover {
-    border-color: rgb(255, 163, 26);
+
+.orange-button {
+    color: black;
+    background-color: rgb(255,163,26);
+    border-color: rgb(255,163,26);
+    border-radius: 5px;
+    padding: 3px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 
-
-
-   
+#main-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+#header { grid-area: 1 / 1 / 2 / 5; }
+#menu { grid-area: 2 / 1 / 5 / 2;
+        position: ; }
+#main { grid-area: 2 / 2 / 5 / 5; }
+#footer { grid-area: 5 / 1 / 6 / 5; }
+    
