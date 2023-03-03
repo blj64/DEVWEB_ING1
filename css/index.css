@@ -5,10 +5,14 @@ body {
     color: white;
 }
 
-.aligned {
+.formulaire {
     display: inline-block;
     text-align: center;
 }   
+
+.titre {
+    display: flex;
+}
 
 #head-line {
     color: white;
