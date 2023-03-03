@@ -43,8 +43,17 @@ nav {
     color: black;
     background-color: rgb(255,163,26);
     border-radius: 5px;
-    
-        padding: 3px;
+    padding: 3px;
+}
+
+.orange-button {
+    color: black;
+    background-color: rgb(255,163,26);
+    border-color: rgb(255,163,26);
+    border-radius: 5px;
+    padding: 3px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 
