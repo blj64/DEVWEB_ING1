@@ -132,11 +132,7 @@ a:link, a:visited {
     right: 0;
     overflow: auto;    
 }
-#one {
-    
-    background-color: red;
-}
-#two {background-color: aqua;}
+
 
 footer {
     position: absolute;
