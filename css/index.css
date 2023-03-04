@@ -74,10 +74,11 @@ nav {
     display: flex;
     padding: 5px;
 }
+.nav-link-a {
+    margin-left: 10%;
+}
 .nav-link {
-    margin: 5px;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 a:link, a:visited {
     text-decoration: none;    
@@ -113,7 +114,6 @@ a:link, a:visited {
 
 
 footer {
-    
     position: absolute;
     bottom: 0;
     width: 100%;
