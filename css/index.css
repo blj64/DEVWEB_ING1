@@ -24,6 +24,9 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: rgb(41,41,41);
 }
@@ -113,9 +116,16 @@ a:link, a:visited {
 }
 
 
+#main {
+    padding-top: 50px; /* set to the height of your header */
+    padding-bottom: 50px; /* set to the height of your footer */
+    overflow-y: scroll;
+}
+
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: rgb(41,41,41);
     text-align: center;
