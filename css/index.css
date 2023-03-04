@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(27,27,27);
+    background-color: rgb(0, 0, 0);
     font-family: Arial,Helvetica,sans-serif;
     font-weight: bold;
     color: white;
@@ -10,7 +10,8 @@ body {
     text-align: center;
     margin-left: 31%;
     margin-right: auto;
-}   
+}  
+
 
 .titre {
     display: flex;
@@ -22,6 +23,10 @@ body {
     margin-bottom: auto;
 }
 
+header {
+    width: 100%;
+    background-color: rgb(41,41,41);
+}
 #head-line {
     color: white;
     background-color: black ;
@@ -33,10 +38,12 @@ body {
 
 }
 h1 {
+    margin-left: 10px;
     text-align:inherit;
 }
 
 #orange {
+    
     color: black;
     background-color: rgb(255,163,26);
     border-radius: 5px;
@@ -75,8 +82,12 @@ a:link, a:visited {
 }
 
 .nav-link {
-    border-bottom: 2px solid;
+    border-bottom: 4px solid rgba(63, 63, 63, 0);
     padding: 7px;
+}
+
+.nav-link:hover {
+    border-color: rgb(255, 163, 26);
 }
 
 #orange {
@@ -98,17 +109,12 @@ a:link, a:visited {
 }
 
 
-#main-parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+footer {
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(41,41,41);
+    text-align: center;
+    padding: 20px;
 }
-    
-#header { grid-area: 1 / 1 / 2 / 5; }
-#menu { grid-area: 2 / 1 / 5 / 2;
-        position: ; }
-#main { grid-area: 2 / 2 / 5 / 5; }
-#footer { grid-area: 5 / 1 / 6 / 5; }
-    
