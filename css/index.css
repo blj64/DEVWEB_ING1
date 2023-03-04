@@ -29,9 +29,11 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
       top: 0;
       left: 0;
+      right: 0;
+      overflow: hidden;
     height: 160px;
     width: 100%;
     background-color: rgb(41,41,41);
@@ -123,21 +125,28 @@ a:link, a:visited {
 
 
 #main-section {
-    overflow: auto; /* set overflow property to auto */
-    padding-top: 50%; /* to prevent main content from overlapping header */
-    padding-bottom: 50%; /* to prevent main content from overlapping footer */
+    position: absolute;
+    top: 200px;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    overflow: auto;    
 }
 #one {
+    
     background-color: red;
 }
 #two {background-color: aqua;}
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
+    overflow: hidden;
     width: 100%;
     background-color: rgb(41,41,41);
     text-align: center;
     padding: 20px;
+    height: 80px;
 }
