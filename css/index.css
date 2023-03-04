@@ -3,7 +3,12 @@ body {
     font-family: Arial,Helvetica,sans-serif;
     font-weight: bold;
     color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
+
 
 .formulaire {
     display: inline-block;
@@ -25,8 +30,9 @@ body {
 
 header {
     position: fixed;
-    top: 0;
-    left: 0;
+      top: 0;
+      left: 0;
+    height: 160px;
     width: 100%;
     background-color: rgb(41,41,41);
 }
@@ -116,11 +122,15 @@ a:link, a:visited {
 }
 
 
-#main {
-    padding-top: 50px; /* set to the height of your header */
-    padding-bottom: 50px; /* set to the height of your footer */
-    overflow-y: scroll;
+#main-section {
+    overflow: auto; /* set overflow property to auto */
+    padding-top: 50%; /* to prevent main content from overlapping header */
+    padding-bottom: 50%; /* to prevent main content from overlapping footer */
 }
+#one {
+    background-color: red;
+}
+#two {background-color: aqua;}
 
 footer {
     position: fixed;
