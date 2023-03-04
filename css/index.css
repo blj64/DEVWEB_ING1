@@ -49,11 +49,12 @@ h1 {
     border-radius: 5px;
     padding: 3px;
 }
-.input-bar {
+.input-bar, .input-bar:focus {
     background-color: rgba(63, 63, 63, 0.697);
     height: 20px;
     color: rgb(127, 126, 126);
-    border-color: rgb(127, 126,);
+    outline: none;
+    border-color: transparent;
 }
 #search-bar {
     margin-top: auto;
@@ -63,8 +64,10 @@ h1 {
 }
 #search-logo {
     background-color: rgb(255, 163, 26);
-    border-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     padding: 3px;
+    
     color: black;
 }
 nav {
