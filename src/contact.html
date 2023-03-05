@@ -2,34 +2,58 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <script src="../js/index.js"></script>
-    <title>Contact</title>
+    <script src="js/index.js"></script>
+    <title>RockHub</title>
 </head>
 <body>
     <div id="main-page"> 
-        <!-- HEADER A RAJOUTER-->
-        <section id="main" class="formulaire">
-            <br><br><br><br><br>
-            <div class="titre">
-                <img src="contactLogo.png" width="80px" height="80px" alt="lettre">
-                <h2 id="contact-title">Formulaire de contact</h2>
+        <header id="header">
+            <div id="head-line">Some random text that we need to replace as soon as possible sinon this is not gonna be ok</div>
+            <div id="header-top">
+                <h1><span id="white">Rock </span><span id="orange">hub</span></h1>
+                <div id="search-bar">
+                    <input class="input-bar" type="text" placeholder="Search 5436 music" >
+                    <div id="search-logo"><img src="./img/loupe.png" alt="O\" height="15" width="20"></div>
+                </div>
             </div>
-            
-            <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
-            
-            <form action="">
-                
-                <b><label for="nom">Nom:</label></b><br>
-                <input type="text" id="nom" class="input-bar" name="nom"><br><br>
-                <b><label for="objet">Objet:</label></b><br>
-                <input type="text" id="objet" class="input-bar" name="objet"><br><br>
-                <b><label for="message">Contenu:</label></b><br>
-                <textarea type="text" cols="50" rows="5" id="message" class="input-bar" name="message"></textarea><br><br>
+            <nav>
+                <a class="nav-link-a" href="../index.html"><div class="nav-link">HOME</div></a>
+                <a class="nav-link-a" href="./src/songs.html"><div class="nav-link">SONGS</div></a>
+                <a class="nav-link-a" href="./src/playlist.html"><div class="nav-link">PLAYLIST</div></a>
+                <a class="nav-link-a" href="./src/goodies.html"><div class="nav-link">MERCH</div></a>
+                <a class="nav-link-a" href="./src/contact.html"><div class="nav-link">CONTACT</div></a>
+            </nav>
+        </header>
 
-                <input type="submit" class="orange-button" value="Envoyer">
-            </form> 
+        <section id="main-section">
+            <section id="main" class="formulaire">
+                <br><br><br><br><br>
+                <div class="titre">
+                    <img src="contactLogo.png" width="80px" height="80px" alt="lettre">
+                    <h2 id="contact-title">Formulaire de contact</h2>
+                </div>
+                
+                <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
+                
+                <form action="">
+                    
+                    <b><label for="nom">Nom:</label></b><br>
+                    <input type="text" id="nom" class="input-bar" name="nom"><br><br>
+                    <b><label for="objet">Objet:</label></b><br>
+                    <input type="text" id="objet" class="input-bar" name="objet"><br><br>
+                    <b><label for="message">Contenu:</label></b><br>
+                    <textarea type="text" cols="50" rows="5" id="message" class="input-bar" name="message"></textarea><br><br>
+    
+                    <input type="submit" class="orange-button" value="Envoyer">
+                </form> 
+            </section>
+
         </section>
-        <!-- FOOTER A RAJOUTER-->
+    
+        <footer id="footer">
+            <span id="copyright">Copyright Société RockHub<br></span>
+            <span id="footer-text">Welcome Cy Tech</span>   
+        </footer>
     </div>
 </body>
 </html>
