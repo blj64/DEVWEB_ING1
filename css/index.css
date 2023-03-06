@@ -36,7 +36,7 @@ header {
     right: 0;
     overflow: hidden;
     height: 160px;
-    width: 100%;
+    width: inherit;
     background-color: rgb(41,41,41);
 }
 #head-line {
@@ -205,7 +205,7 @@ footer {
     left: 0;
     right: 0;
     overflow: hidden;
-    width: 100%;
+    width: inherit;
     background-color: rgb(41,41,41);
     text-align: center;
     padding: 20px;
