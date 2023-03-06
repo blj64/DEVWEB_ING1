@@ -213,7 +213,7 @@ a:link, a:visited {
 
 .song {
     flex: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     
 }
 .song-img {
@@ -224,11 +224,40 @@ a:link, a:visited {
     margin: 0 auto;
   }
   
-  .song-img:hover {
+.song-img:hover {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
+.quantity-number {
+    width: 30px;
+    text-align: center;
+}
 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.buy {
+    background-color: rgb(255, 163, 26);
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 5px;
+    width: fit-content;
+}
+.buy:hover {
+    background-color: rgb(194, 126, 24);
+}
+.buy:active {
+    background-color: rgb(147, 101, 33);
+}
 
 footer {
     position: absolute;
