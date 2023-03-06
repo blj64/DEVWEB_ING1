@@ -82,6 +82,14 @@ h1 {
     
     color: black;
 }
+#panier-header{
+    background-color: rgb(255,163,26);
+    color: black;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+    margin-left: 30px;
+}
 nav {
     display: flex;
     padding: 5px;
@@ -164,8 +172,7 @@ a:link, a:visited {
     
 }
 
-#logo-rockhub {
-}
+
 #introduction-home {
     padding: 20px;
 }
