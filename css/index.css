@@ -68,6 +68,16 @@ h1 {
     outline: none;
     border-color: transparent;
 }
+
+.input-area {
+    background-color: rgba(63, 63, 63, 0.697);
+    height: 100px;
+    resize: none;
+    color: rgb(127, 126, 126);
+    outline: none;
+    border-color: transparent;
+}
+
 #search-bar {
     margin-top: auto;
     margin-bottom: auto;
