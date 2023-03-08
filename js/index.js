@@ -1,10 +1,6 @@
-/*document.addEventListener('click',function(event){
-    var id =event.target.id;
-    var className=document.getElementById(id).getAttribute("class");
- alert(id);
- alert(className);
-    });*/
+const elt = document.getElementById("song-1");
+elt.addEventListener("click", myFunction);
 
-document.addEventListener('click', function(event) {
-    
-})
+function myFunction(){
+    alert(this.className);
+}
