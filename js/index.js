@@ -1,6 +1,10 @@
-const elt = document.getElementById("song-1");
-elt.addEventListener("click", myFunction);
+const elt = document.getElementsByClassName("quantity-more");
+
+for (let i = 0; i < elt.length; i++) {
+    elt[i].addEventListener("click", myFunction);
+    
+}
 
 function myFunction(){
-    alert(this.className);
+    alert(this.id);
 }
