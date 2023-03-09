@@ -30,20 +30,20 @@
         <section id="main-section">
             
             <div id="songs">
-                <div class="song" id="song-1">
-                    <img class="song-img" id="song-img-1" src="../img/img1.jpeg" height="200px" width="200px" alt="">
-                    <h2 class="song-name" id="song-name-1">Radio Song</h2>
-                    <h3 class="song-artist" id="song-artist-1">Superbus</h3>
-                    <div class="stock" id="stock-1">
-                        <button class="show-stock" id="show-stock-1">stock</button>
-                        <div class="stock-number" id="stock-number-1">0</div>
+                <div class="song" data-song="RadioSong-Superbus" id="song-RadioSong-Superbus">
+                    <img class="song-img" data-song="RadioSong-Superbus" id="song-img-RadioSong-Superbus" src="../img/img1.jpeg" height="200px" width="200px" alt="">
+                    <h2 class="song-name" data-song="RadioSong-Superbus" id="song-name-RadioSong-Superbus">Radio Song</h2>
+                    <h3 class="song-artist" data-song="RadioSong-Superbus" id="song-artist-RadioSong-Superbus">Superbus</h3>
+                    <div class="stock" data-song="RadioSong-Superbus" id="stock-RadioSong-Superbus">
+                        <button class="show-stock" data-song="RadioSong-Superbus" id="show-stock-RadioSong-Superbus">stock</button>
+                        <div style="display: none;" class="stock-number" data-song="RadioSong-Superbus" id="stock-number-RadioSong-Superbus">0</div>
                     </div>
-                    <div class="quantity" id="quantity-1">
-                        <button class="quantity-less" id="quantity-less-1">-</button>
-                        <input class="quantity-number" id="quantity-number-1" type="number" value="0">
-                        <button class="quantity-more" id="quantity-more-1">+</button>
+                    <div class="quantity" data-song="RadioSong-Superbus" id="quantity-RadioSong-Superbus">
+                        <button class="quantity-less" data-song="RadioSong-Superbus" id="quantity-less-RadioSong-Superbus">-</button>
+                        <input class="quantity-number" min="0" data-song="RadioSong-Superbus" id="quantity-number-RadioSong-Superbus" type="number" value="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                        <button class="quantity-more" data-song="RadioSong-Superbus" id="quantity-more-RadioSong-Superbus">+</button>
                     </div>
-                    <button class="buy" id="buy-1">+</button>
+                    <button class="buy" data-song="RadioSong-Superbus" id="buy-RadioSong-Superbus">+</button>
                 </div>
 
 
