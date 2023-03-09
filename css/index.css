@@ -254,7 +254,9 @@ a:link, a:visited {
 
 }
 
-
+.stock-number {
+    display: none;
+}
 
 .quantity-number {
     width: 30px;
