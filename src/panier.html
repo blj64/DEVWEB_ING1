@@ -1,5 +1,64 @@
-<section id="main-section">
-    <h1>pnaier</h1>
-    <div>Article</div>
-    <div>total</div>
-</section>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/index.js"></script>
+    <title>RockHub</title>
+</head>
+<body onload="panierLoad()">
+    <div id="main-page"> 
+        <header id="header">
+            <div id="head-line">Some random text that we need to replace as soon as possible sinon this is not gonna be ok</div>
+            <div id="header-top">
+                <h1><span id="white">Rock </span><span id="orange">hub</span></h1>
+                <div id="search-bar">
+                    <input class="input-bar" type="text" placeholder="Search 5436 music" >
+                    <div id="search-logo"><img src="../img/loupe.png" alt="O\" height="15" width="20"></div>
+                    <a id="panier-header" href="../src/panier.html">
+                        <div >panier</div>
+                    </a>
+                </div>
+                
+            </div>
+            <nav>
+                <a class="nav-link-a" href="../index.html"><div class="nav-link">HOME</div></a>
+                <a class="nav-link-a" href="./songs.html"><div class="nav-link">SONGS</div></a>
+                <a class="nav-link-a" href="./playlist.html"><div class="nav-link">PLAYLIST</div></a>
+                <a class="nav-link-a" href="./goodies.html"><div class="nav-link">MERCH</div></a>
+                <a class="nav-link-a" href="./contact.html"><div class="nav-link">CONTACT</div></a>
+            </nav>
+        </header>
+
+        <section id="main-section">
+
+
+            <h1>panier</h1>
+            <div id="panier-body">
+                <div id="panier-article"></div>
+                    <h2>Article</h2>
+                    <table id="panier-article-table">
+                        <tr>
+                            <th>Apercu</th>
+                            <th>Type</th>
+                            <th>Reference</th>
+                            <th>Quantite</th>
+                            <th>Prix</th>
+                        </tr>
+                        
+                    </table>
+
+                    
+                <div id="panier-total">
+                    <h2>Total</h2>
+                    <span>0€</span>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <span id="copyright">Copyright Société RockHub<br></span>
+            <span id="footer-text">Welcome Cy Tech</span>   
+        </footer>
+    </div>
+</body>
+</html>

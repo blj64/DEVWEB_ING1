@@ -1,0 +1,5 @@
+<button class="nav-link-a" data-page="home"><div class="nav-link">HOME</div></button>
+<button class="nav-link-a" data-page="song"><div class="nav-link">SONGS</div></button>
+<button class="nav-link-a" data-page="playlist"><div class="nav-link">PLAYLIST</div></button>
+<button class="nav-link-a" data-page="merch"><div class="nav-link">MERCH</div></button>
+<button class="nav-link-a" data-page="contact"><div class="nav-link">CONTACT</div></button>

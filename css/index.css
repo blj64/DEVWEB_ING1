@@ -9,7 +9,11 @@ body {
     height: 100%;
 }
 
-
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
 
 .formulaire {
     display: inline-block;
@@ -177,6 +181,7 @@ a:link, a:visited {
     grid-row-gap: 0px; 
     
 }
+
 #website-introduction {
     background-color: rgb(0, 0, 0);
     
@@ -187,6 +192,17 @@ a:link, a:visited {
     margin-left: 40%;
     transform: scale(6);
     width: max-content;
+}
+#logo-rockhub:hover {
+    transition: filter .5s;
+    filter: drop-shadow(0 0 0.75rem rgba(251, 149, 7, 0.976));
+    width: 500px;
+    height: 500px;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function:steps();
+    animation-iteration-count: infinite;
+
 }
 #introduction-home {
     padding: 20px;
@@ -228,7 +244,9 @@ a:link, a:visited {
 }
 .song-img {
     padding: 50px;
+    
     transition: transform .2s; /* Animation */
+    
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -317,3 +335,4 @@ footer {
     padding: 20px;
     height: 60px;
 }
+
