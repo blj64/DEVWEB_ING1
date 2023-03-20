@@ -2,8 +2,11 @@ const more = document.getElementsByClassName("quantity-more");
 const less = document.getElementsByClassName("quantity-less");
 const stockBtn = document.getElementsByClassName("show-stock");
 const addBtn = document.getElementsByClassName("buy")
+const panierBtn = document.getElementById("panier-header")
 
-
+panierBtn.addEventListener("click", () => {
+        panierBtn.style.display = panierBtn.style.display == "none" ? "block" : "none"
+})
 
 let article = class {
     constructor(type, reference, quantity, price) {
@@ -37,8 +40,10 @@ for (let i = 0; i < more.length; i++) {
 
     addBtn[i].addEventListener("click", () => {
         let tets = panier.push(new article(addBtn[i].parentNode.className, addBtn[i].dataset.reference, document.getElementById("quantity-number-"+addBtn[i].dataset.reference).value, 5))
+        document.cookie = "panier=" + encodeURIComponent(tets) + "; path=/";
+
     })
-   
+    
     
 }
 

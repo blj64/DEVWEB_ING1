@@ -9,11 +9,6 @@ body {
     height: 100%;
 }
 
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  
 
 .formulaire {
     display: inline-block;
@@ -97,6 +92,7 @@ h1 {
     color: black;
 }
 #panier-header{
+    
     background-color: rgb(255,163,26);
     color: black;
     border-radius: 5px;
@@ -196,12 +192,6 @@ a:link, a:visited {
 #logo-rockhub:hover {
     transition: filter .5s;
     filter: drop-shadow(0 0 0.75rem rgba(251, 149, 7, 0.976));
-    width: 500px;
-    height: 500px;
-    animation-name: rotate;
-    animation-duration: 10s;
-    animation-timing-function:steps();
-    animation-iteration-count: infinite;
 
 }
 #introduction-home {
@@ -228,7 +218,7 @@ a:link, a:visited {
     background-color: rgb(255, 163, 26);
 }
 
-#songs {
+#songs, #playlist, #merch {
     padding: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -237,12 +227,12 @@ a:link, a:visited {
 
 }
 
-.song {
+.song, .playlist, .merch {
     flex: 50%;
     margin-bottom: 70px;
     
 }
-.song-img {
+.song-img, .playlist-img, .merch-img{
     padding: 50px;
     
     transition: transform .2s; /* Animation */
@@ -252,7 +242,7 @@ a:link, a:visited {
     margin: 0 auto;
   }
   
-.song-img:hover {
+.song-img:hover, .playlist-img:hover, .merch-img:hover {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
