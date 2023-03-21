@@ -284,6 +284,7 @@ a:link, a:visited {
 
 .stock-number {
     display: none;
+    padding-top: 5px;
 }
 
 .quantity-number {
