@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <script src="../js/index.js"></script>
+    <script src="./js/form.js"></script>
     <title>RockHub</title>
 </head>
 <body>
@@ -37,23 +38,20 @@
                 
                 <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
                 
-                <form action="">
+                <form action="" id="contact-form">
                     
-                    <b><label for="nom">Nom:</label></b><br>
-                    <input type="text" id="nom" class="input-bar" name="nom"><br><br>
-
-                    <b><label for="prenom">Prénom:</label></b><br>
-                    <input type="text" id="nom" class="input-bar" name="nom"><br><br>
+                    <b><label for="name">name:</label></b><br>
+                    <input type="text" id="name" class="input-bar" name="name"><br><br>
 
                     <b><label for="mail">Mail:</label></b><br>
-                    <input type="mail" id="nom" class="input-bar" name="nom"><br><br>
+                    <input type="mail" id="email" class="input-bar" name="email"><br><br>
 
                     <b><label for="objet">Genre:</label></b><br>
                     <input type="radio" id="homme" class="input-bar" name="objet" value="homme"><label for="homme">Homme</label>
                     <input type="radio" id="femme" class="input-bar" name="objet" value="femme"><label for="femme">Femme</label><br><br>
                     
                     <b><label for="date-n">Date de naissance:</label></b><br>
-                    <input type="date" id="objet" class="input-bar" name="nom"><br><br>
+                    <input type="date" id="objet" class="input-bar" name="name"><br><br>
 
                     <b><label for="fonction">Fonction:</label></b><br>
                     <select name="fonction" id="objet" class="input-bar">
@@ -63,10 +61,10 @@
                     </select><br><br>
 
                     <b><label for="sujet">Sujet:</label></b><br>
-                    <input type="text" id="objet" class="input-bar" name="nom"><br><br>
+                    <input type="text" id="objet" class="input-bar" name="name"><br><br>
                     
                     <b><label for="message">Contenu:</label></b><br>
-                    <textarea type="text" cols="50" id="objet" class="input-area"></textarea><br><br>
+                    <textarea type="text" cols="50" id="message" class="input-area"></textarea><br><br>
     
                     <input type="submit" class="orange-button" value="Envoyer">
                 </form> 
