@@ -200,6 +200,15 @@ a:link, a:visited {
     
 }
 
+@media (max-width: 700px) {
+    .main-section-div{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
 #website-introduction {
     background-color: rgb(0, 0, 0);
     
