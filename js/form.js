@@ -1,6 +1,8 @@
 
 function validerSaisies() {
 
+    var validation = true;
+
     const form = document.getElementById('contact-form');
 
     const nameInput = document.getElementById('name');
@@ -18,15 +20,34 @@ function validerSaisies() {
     const nameRegex = /^[a-zA-Z\s]*$/;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+    if(name != "")
+    {
+        // alors on envoie le formulaire
+        nameError.innerHTML = "";
+    }
+    else
+    {
+        nameError.innerHTML = "Champ obligatoire";
+        validation = false;
+    }
     // si la valeur du champ prenom est valide
     if(name.match(nameRegex) != null) {
       // alors on envoie le formulaire
       nameError.innerHTML = "";
-      form.submit();
     }
     else 
     {
-        nameError.innerHTML = "*Veuillez saisir un nom valide (lettres et espaces uniquement)*";
+        nameError.innerHTML = "Veuillez saisir un nom valide (lettres et espaces uniquement)";
+        validation = false;
+    }
+
+    if (validation)
+    {
+        form.submit();
+    }
+    else
+    {
+        return validation;
     }
   }
 

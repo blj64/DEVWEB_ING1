@@ -41,17 +41,17 @@
                 
                 <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
                 
-                <form id="contact-form">
-                        <div>
-                        <b><label for="name">Name:</label></b><br>
-                        <input type="text" id="name" class="input-bar" name="name"><br><br>
-                        <span id="error-name" class="error-message"></span>
-                        </div>
+                <form id="contact-form" onsubmit="return validerSaisies();"> 
+                    <div>
+                    <b><label for="name">Name:</label></b><br>
+                    <input type="text" id="name" class="input-bar" name="name">
+                    <span id="error-name" class="error-message"></span><br>
+                    </div>
                   
                     <div>
                       <b><label for="email">Mail:</label></b><br>
-                      <input type="email" id="email" class="input-bar" name="email"><br><br>
-                      <span id="error-email" class="error-message"></span>
+                      <input type="email" id="email" class="input-bar" name="email">
+                      <span id="error-email" class="error-message"></span><br>
                     </div>
                   
                     <div>
@@ -85,7 +85,7 @@
                       <span class="error-message" class="error-message"></span>
                     </div>
                   
-                    <input type="submit" class="orange-button" value="Envoyer" onclick="validerSaisies()"/>
+                    <input type="submit" class="orange-button" value="Envoyer"/>
                   </form>
                 </section>
             </section>      
