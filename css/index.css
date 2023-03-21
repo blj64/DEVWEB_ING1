@@ -186,7 +186,9 @@ a:link, a:visited {
 
 }
 .main-section-div {
-    height: 100%;
+    min-height: 100%;
+    max-height: max-content;
+    
     justify-content: center;
     align-items: center;
     flex-direction: column;
