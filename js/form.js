@@ -1,9 +1,11 @@
 const form = document.getElementById('contact-form');
 
+
+
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const nameInput = document.getElementById('nom');
+    const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
     
@@ -15,6 +17,7 @@ form.addEventListener('submit', function(event) {
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     
     if (!nameRegex.test(name)) {
+        console.log("coucou") 
       nameInput.classList.add('error');
       nameInput.nextElementSibling.textContent = 'Veuillez saisir un nom valide (lettres et espaces uniquement)';
     } else {
