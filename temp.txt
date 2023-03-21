@@ -1,0 +1,26 @@
+a faire:
+
+SUJET 1
+
+Le site contiendra un minimum de 3 camtégories de 5 produits chacune (recup les imgs)
+
+---------------------------------------------------------------------------------------------
+
+SUJET 2
+
+Pour chaque produit :
+
+    Rajout d’une colonne qui ne sera pas visible et contiendra la quantité en stock
+du produit. Cette colonne pourra être affichée / cachée en cliquant sur un
+bouton « stock » en dessous des produits.
+    
+    Rajout d’un colonne « Quantité commandée » pour chaque produit avec un
+bouton « Ajouter au panier ». Ce bouton sera pour l’instant inactif. La quantité
+commandée pourra être modifiée uniquement par des boutons « - » et « + »
+et sera bornée entre 0 et la quantité en stock par désactivation de ces boutons.
+
+
+
+Vérification des données du formulaire de contact. S’il y a une erreur, la(es) case(s)
+devra(ont) être marquée(s) en rouge avec la donnée saisie restant dans la case et
+une indication du format demandé à côté.
