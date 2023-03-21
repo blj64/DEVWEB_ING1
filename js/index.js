@@ -2,11 +2,6 @@ const more = document.getElementsByClassName("quantity-more");
 const less = document.getElementsByClassName("quantity-less");
 const stockBtn = document.getElementsByClassName("show-stock");
 const addBtn = document.getElementsByClassName("buy")
-const panierBtn = document.getElementById("panier-header")
-
-panierBtn.addEventListener("click", () => {
-        panierBtn.style.display = panierBtn.style.display == "none" ? "block" : "none"
-})
 
 let article = class {
     constructor(type, reference, quantity, price) {
@@ -22,13 +17,23 @@ let panier = []
 
 for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("click", () => {
-        document.getElementById("quantity-number-"+more[i].dataset.reference).value++
+        stockValue = document.getElementById("stock-number-"+more[i].dataset.reference).innerHTML
+        if (stockValue > 0) {
+            document.getElementById("quantity-number-"+more[i].dataset.reference).value++
+            stockValue--
+            document.getElementById("stock-number-"+more[i].dataset.reference).innerHTML = stockValue
+
+        }
 
     });
     less[i].addEventListener("click", () => {
         const value = document.getElementById("quantity-number-"+less[i].dataset.reference)
         if (value.value > 0) {
             value.value--
+            stockValue = document.getElementById("stock-number-"+more[i].dataset.reference).innerHTML
+            stockValue++
+            document.getElementById("stock-number-"+more[i].dataset.reference).innerHTML = stockValue
+    
         }
 
     });
