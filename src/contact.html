@@ -39,11 +39,11 @@
                 <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
                 
                 <form id="contact-form">
-                    <div>
-                      <b><label for="name">Name:</label></b><br>
-                      <input type="text" id="name" class="input-bar" name="name" required><br><br>
-                      <span class="error-message"></span>
-                    </div>
+                        <div>
+                        <b><label for="name">Name:</label></b><br>
+                        <input type="text" id="name" class="input-bar" name="name"><br><br>
+                        <span class="error-message"></span>
+                        </div>
                   
                     <div>
                       <b><label for="email">Mail:</label></b><br>
@@ -78,11 +78,11 @@
                   
                     <div>
                       <b><label for="message">Contenu:</label></b><br>
-                      <textarea cols="50" id="message" class="input-area" name="message" required></textarea><br><br>
+                      <textarea cols="50" id="message" class="input-area" name="message"></textarea><br><br>
                       <span class="error-message"></span>
                     </div>
                   
-                    <button type="submit" class="orange-button">Envoyer</button>
+                    <input type="submit" class="orange-button" value="Envoyer" onclick="validerSaisies()"/>
                   </form>
                 </section>
             </section>      

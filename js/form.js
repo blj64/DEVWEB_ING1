@@ -1,10 +1,52 @@
-const form = document.getElementById('contact-form');
 
-alert("form en cours de validation");
+function validerSaisies() {
 
+    const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+
+    const nameRegex = /^[a-zA-Z\s]*$/;
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    // si la valeur du champ prenom est non vide
+    if(!nameRegex.test(name)) {
+      // alors on envoie le formulaire
+      form.submit();
+    }
+    else {
+      // sinon on affiche un message
+      alert("Saisissez un prénom valide");
+    }
+
+    if(emailInput.value != "") {
+        // alors on envoie le formulaire
+        form.submit();
+    }
+    else {
+        // sinon on affiche un message
+        alert("Saisissez l'email");
+    }
+
+    if(messageInput.value != "") {
+        // alors on envoie le formulaire
+        form.submit();
+    }
+    else {
+        // sinon on affiche un message
+        alert("Saisissez le message");
+    }
+  }
+
+/*
+
+document.getElementById('contact-form').addEventListener('submit', function() {
+    alert("form en cours de validation");
     
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
@@ -44,5 +86,9 @@ form.addEventListener('submit', function(event) {
     
     if (!nameInput.classList.contains('error') && !emailInput.classList.contains('error') && !messageInput.classList.contains('error')) {
       form.submit();
+      alert('form envoyé !');
     }
   });
+
+
+  */
