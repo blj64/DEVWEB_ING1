@@ -172,6 +172,7 @@ a:link, a:visited {
     overflow:auto;
     -ms-overflow-style: none;
     scrollbar-width: none;   
+   
 }
 #main-page-background {
     position: fixed;
