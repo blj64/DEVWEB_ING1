@@ -44,6 +44,22 @@ header {
     text-align: center;
     padding: 3px;
 }
+
+#head-line-container {
+    animation: slide-text 15s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes slide-text {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
 #header-top {
     display: flex;
 
@@ -325,18 +341,3 @@ footer {
     padding: 20px;
     height: 60px;
 }
-
-#head-line-container {
-    animation: slide-text 5s linear infinite;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  
-  @keyframes slide-text {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(-100%, 0, 0);
-    }
-  }
