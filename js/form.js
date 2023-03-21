@@ -1,5 +1,6 @@
 const form = document.getElementById('contact-form');
 
+alert("form en cours de validation");
 
 
 form.addEventListener('submit', function(event) {
@@ -17,7 +18,7 @@ form.addEventListener('submit', function(event) {
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     
     if (!nameRegex.test(name)) {
-        console.log("coucou") 
+        alert("coucou");
       nameInput.classList.add('error');
       nameInput.nextElementSibling.textContent = 'Veuillez saisir un nom valide (lettres et espaces uniquement)';
     } else {
