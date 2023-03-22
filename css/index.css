@@ -11,22 +11,16 @@ body {
 
 
 .formulaire {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-left: 31%;
+    margin-left: auto;
     margin-right: auto;
 }  
 
 
-.titre {
-    display: flex;
-    margin-left: 15%;
-}
 
-#contact-title {
-    margin-top: auto;
-    margin-bottom: auto;
-}
+
 
 header {
     position: absolute;
