@@ -209,6 +209,9 @@ a:link, a:visited {
     }
 }
 
+.span-text {
+    margin: 10px;
+}
 #website-introduction {
     background-color: rgb(0, 0, 0);
     
@@ -221,6 +224,7 @@ a:link, a:visited {
     width: max-content;
 }
 #logo-rockhub:hover {
+    
     transition: filter .5s;
     filter: drop-shadow(0 0 0.75rem rgba(251, 149, 7, 0.976));
 
@@ -239,11 +243,43 @@ a:link, a:visited {
     background-color: rgb(0, 0, 0);
 
 }
+#playlist-logo {
+    margin-left: 50px;
+
+}
+#playlist-logo:hover {
+    transition: transform .3s;
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+    transition: filter .5s;
+    filter: drop-shadow(20px 10px 5px rgba(251, 149, 7, 0.976));
+    
+}
 #merch-section {
     background-color: rgb(255, 163, 26);
 }
+#merch-logo {
+    margin-left: 30%;
+}
+#merch-logo:hover {
+    transition: transform .7s;
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+    transition: filter .5s;
+    filter: drop-shadow(20px 10px 5px black);
+
+
+}
 #creators {
     background-color: rgb(0, 0, 0);
+}
+
+.div-creators {
+    display: flex;
+    flex-direction: column;
+}
+.creators-description {
+    text-align: center;
 }
 #contact-section {
     background-color: rgb(255, 163, 26);
