@@ -1,3 +1,12 @@
+<?php session_start(); 
+
+    include "header.php";
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -6,6 +15,7 @@
     <title>RockHub</title>
 </head>
 <body>
+    
     <div id="main-page"> 
         <header id="header">
             <div id="head-line">
@@ -111,3 +121,7 @@
     </div>
 </body>
 </html>
+
+<?php
+    include "footer.php";
+?>
