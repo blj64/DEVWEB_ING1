@@ -278,6 +278,11 @@ a:link, a:visited {
     display: flex;
     flex-direction: column;
 }
+.div-creators>img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
 .creators-description {
     text-align: center;
 }
