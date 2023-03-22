@@ -18,7 +18,11 @@ body {
     margin-right: auto;
 }  
 
-
+#star-contact {
+    color: red;
+    margin-top: 20px;
+    font-size: small;
+}
 
 
 
