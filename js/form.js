@@ -1,7 +1,10 @@
 
 function validerSaisies() {
 
-    var validation = false;
+    var validation_name = true;
+    var validation_email = true;
+    var validation_message = true;
+
 
     const form = document.getElementById('contact-form');
 
@@ -30,72 +33,56 @@ function validerSaisies() {
       else 
       {
           nameError.innerHTML = "Veuillez saisir un nom valide (lettres et espaces uniquement)";
-          validation = false;
+          validation_name = false;
       }
     }
     else
     {
         nameError.innerHTML = "Champ obligatoire";
-        validation = false;
+        validation_name = false;
+    }
+
+    if(email != "") //si la saisie mail est non vide
+    {
+      // si il n'y a pas de caracteres interdits et que la saisie est non vide
+      if(email.match(emailRegex) != null) {
+        // alors on envoie le formulaire
+        emailError.innerHTML = "";
+      }
+      else 
+      {
+        emailError.innerHTML = "Veuillez saisir un email valide";
+          validation_email = false;
+      }
+    }
+    else
+    {
+      emailError.innerHTML = "Champ obligatoire";
+        validation_email = false;
+    }
+    
+    if(message != "") //si la saisie mail est non vide
+    {
+      messageError.innerHTML = "";
+    }
+    else
+    {
+      messageError.innerHTML = "Champ obligatoire";
+      validation_message = false;
     }
     
 
-    if (validation)
+
+
+
+
+    if (validation_name == true && validation_email == true && validation_message == true)
     {
+      alert("here");
         form.submit();
     }
     else
     {
-        return validation;
+      return false;
     }
   }
-
-/*
-
-document.getElementById('contact-form').addEventListener('submit', function() {
-    alert("form en cours de validation");
-    
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-    const messageInput = document.getElementById('message');
-    
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
-    
-    const nameRegex = /^[a-zA-Z\s]*$/;
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    
-    if (!nameRegex.test(name)) {
-        alert("coucou");
-      nameInput.classList.add('error');
-      nameInput.nextElementSibling.textContent = 'Veuillez saisir un nom valide (lettres et espaces uniquement)';
-    } else {
-      nameInput.classList.remove('error');
-      nameInput.nextElementSibling.textContent = '';
-    }
-    
-    if (!emailRegex.test(email)) {
-      emailInput.classList.add('error');
-      emailInput.nextElementSibling.textContent = 'Veuillez saisir une adresse e-mail valide';
-    } else {
-      emailInput.classList.remove('error');
-      emailInput.nextElementSibling.textContent = '';
-    }
-    
-    if (message.length < 10) {
-      messageInput.classList.add('error');
-      messageInput.nextElementSibling.textContent = 'Veuillez saisir un message d\'au moins 10 caractères';
-    } else {
-      messageInput.classList.remove('error');
-      messageInput.nextElementSibling.textContent = '';
-    }
-    
-    if (!nameInput.classList.contains('error') && !emailInput.classList.contains('error') && !messageInput.classList.contains('error')) {
-      form.submit();
-      alert('form envoyé !');
-    }
-  });
-
-
-  */
