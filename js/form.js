@@ -78,7 +78,6 @@ function validerSaisies() {
 
     if (validation_name == true && validation_email == true && validation_message == true)
     {
-      alert("here");
         form.submit();
     }
     else
