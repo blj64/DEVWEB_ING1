@@ -1,5 +1,32 @@
 <?php 
+    
+
+    session_start();
+
+    if (!isset($_SESSION["type"])){
+
+        $verif=false;
+        if (($handle = fopen("users/users.csv", "r")) !== FALSE) {
+            while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE) && !$verif) {
+                if ($_POST["login"]==$data[1] && md5($_POST["password"])==$data[2]){
+                    $verif=true;
+                    $_SESSION["nom"] = $data[0];
+
+                    $_SESSION["login"] = $data[1];
+                    $_SESSION["mdp"] = $_POST["password"]; // !! le mdp est stocké dans l'autre fichier !!
+                }
+            }
+            fclose($handle);
+        }
+
+        if (!$verif){
+            header('Location: connexion.php?error=true');
+            exit();
+        }
+    }
+    
     include "header.php";
+
 ?>
 
         <section id="main-section">
