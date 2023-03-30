@@ -39,9 +39,9 @@
             </nav>
 
             <div>
-                <button>Log in</button>
-                <button>Sign up</button>
-                <button>Deconnexion</button>
+                <button id="login_button" onclick="window.location.href='connexion.php'">Log in</button>
+                <button id="signup_button" onclick="window.location.href='signup.php'">Sign up</button>
+                <button id="logout_button" onclick="window.location.href='deconnexion.php'">Log out</button>
                 <p>Bienvenue Nom prenom</p>
             </div>
         </header>

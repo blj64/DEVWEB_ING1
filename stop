@@ -1,0 +1,732 @@
+[33mcommit 21b44e8d018b7c19e5528425f2e77aa4d293bb6f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Thu Mar 23 10:13:25 2023 +0100
+
+    +php
+
+[33mcommit 74db6ddcf57a9a1bc2061de5046af75fe99a1ff2[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 15:31:15 2023 +0100
+
+    php v1
+
+[33mcommit a4c772636fb6e08bd9af698e7a9c03724b2db6cd[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 15:02:19 2023 +0100
+
+    debut php
+
+[33mcommit d00f88b6ff724afb4aa87dd53fa89e95aef0ad63[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 14:57:10 2023 +0100
+
+    final V1
+
+[33mcommit cfd61fa78488e9bc524f8875ae3342aef881f28d[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 10:39:47 2023 +0100
+
+    orga final
+
+[33mcommit fd957ba0aca5359ff277885dd96d222b1cdf7d1f[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 10:37:29 2023 +0100
+
+    orga
+
+[33mcommit 02db6ee2985a8f1abb53f10ff0faa7beb702bdbf[m
+Merge: 0ff9d73 2557820
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 10:30:48 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit 0ff9d732c92d87567e8ce82e235697ab95fa52cb[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 10:30:44 2023 +0100
+
+    aa
+
+[33mcommit 255782059e2744d05ce9ca5e14981f22676b060c[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Wed Mar 22 10:28:16 2023 +0100
+
+    y a plus contact en bas piporatio
+
+[33mcommit e9867dd0fa478a82d681b17bc865c39a119612c5[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Wed Mar 22 09:18:29 2023 +0100
+
+    *
+
+[33mcommit 76378826669a703f30dd4bae7db1c29c764d5e28[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Wed Mar 22 09:12:54 2023 +0100
+
+    contact center fix
+
+[33mcommit 0082452d3296fd8d8f2d7af6efe952af4cc3b2b3[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 08:54:15 2023 +0100
+
+    finito js
+
+[33mcommit 002e6fa32454ea04b2d4f3667c180e06a2e3e92a[m
+Merge: ed24306 0bfc03a
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 08:43:15 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit 0bfc03a435a751c7dd757e099461529ca5c0e064[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Wed Mar 22 08:43:01 2023 +0100
+
+    fix dans merch + fix creators
+
+[33mcommit ed24306a3179f943e1f6e49aa72e15b06dad8bcd[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Wed Mar 22 08:42:32 2023 +0100
+
+    +forms
+
+[33mcommit 7d282f61e1cac5afb1b47198280dc17a4f8d4802[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Wed Mar 22 08:39:41 2023 +0100
+
+    home changement
+
+[33mcommit 594124e42f1cb1a159ec961d29987ec3dd8be7b0[m
+Merge: bcb0447 136cd70
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 22:34:56 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main' into main
+
+[33mcommit bcb04471f024c757023a4e934527cc9dc923794d[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 22:34:54 2023 +0100
+
+    ze
+
+[33mcommit 136cd702e2214b0835e0b0bed126e6f9db6c4eea[m
+Merge: b12bfdd d7746f2
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 11:17:28 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit b12bfdd1fe2646298ae71aface92920d444987fa[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 11:16:59 2023 +0100
+
+    finito
+
+[33mcommit d7746f2cabdd9586c19a9d9f6c081ff01c81026b[m
+Merge: 8d2721f 5e11342
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 11:14:43 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main' into main
+
+[33mcommit 8d2721f56f8f53c9253cb608e7d6fa2bcf364101[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 11:14:38 2023 +0100
+
+    footer
+
+[33mcommit 5e11342acfae917a0ccf28cf4c10a6eaea026c5b[m
+Merge: 63cb3a5 f7bc791
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 11:04:38 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit 63cb3a5b7ed7f44e3e19a1d3c5f3e0f4f778858b[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 11:04:32 2023 +0100
+
+    ++
+
+[33mcommit f7bc791858e3d07ac070f100101929bef5443f34[m
+Merge: e992c62 f69b589
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 11:01:51 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main' into main
+
+[33mcommit e992c621e12e6b92af0a2787c0b650808cf5e5c5[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 11:01:42 2023 +0100
+
+    e
+
+[33mcommit f69b589551b423400dfd25b50eb33ab9386228d6[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 10:48:59 2023 +0100
+
+    +form
+
+[33mcommit 4cb50a437ee9377e0df73472daf9a67d05bb8587[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 10:32:01 2023 +0100
+
+    +photos
+
+[33mcommit 1407496778f1fc0f8cfb8c9542754698cf0ea377[m
+Merge: f50f798 f455d0f
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 10:26:33 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit f50f79802577c078c9a895802bee1e825722dfea[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 10:26:29 2023 +0100
+
+    azer
+
+[33mcommit f455d0f142d84e2aae67f6dff03754befdb463d3[m
+Merge: 3ac8fa8 d62bb6c
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 10:25:12 2023 +0100
+
+    Merge branch 'main' of https://github.com/blj64/DEVWEB_ING1 into main
+
+[33mcommit 3ac8fa8a11cd70b17017759661905a78e9a6921d[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 10:24:56 2023 +0100
+
+    text
+
+[33mcommit d62bb6c8400e02a93fc0d28cba1e173c0bc95890[m
+Merge: 85dfc80 36a91ee
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 10:07:57 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit 85dfc806eea81d350ddcbce2a4a9386766f74750[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 10:07:51 2023 +0100
+
+    +form
+
+[33mcommit 36a91ee3ba82cd3a0f437b0184de44f3571a343b[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 10:02:44 2023 +0100
+
+    c==8
+
+[33mcommit c1a1ed6498bf5fa82454c688c2f1fe95384c8ff1[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 09:34:49 2023 +0100
+
+    ratio
+
+[33mcommit f6cd06809f6d220185530cb2b39125801d4b8f82[m
+Merge: c974078 8c18126
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 09:30:02 2023 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit 8c181266f5afd24452c217e7a80c35a7613fbfa8[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 09:28:07 2023 +0100
+
+    fix js contact
+
+[33mcommit 586d4ea4b72f0cae8bedfcc786e693bc2eb7a1d7[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 09:27:24 2023 +0100
+
+    petite anim moche
+
+[33mcommit c974078f32cb7956006186b1063db1aa3afc41ce[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 09:27:08 2023 +0100
+
+    +photos nous
+
+[33mcommit 2e8e31470e4ed0f829f5d672cfbb33403b12dcca[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 09:23:01 2023 +0100
+
+    +verifform
+
+[33mcommit ed09a11538e097d8c5b3f2651cfaccde6e81d372[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 09:10:53 2023 +0100
+
+    finitoplaylists
+
+[33mcommit c203b72b2a57f720490ce19493526d3c475ca2ef[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 09:07:56 2023 +0100
+
+    ++playlists
+
+[33mcommit e6ce631bf4aa3a9d5af2613e2e3cd84561a5653c[m
+Merge: 00a994b fee0d37
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:58:18 2023 +0100
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit 00a994b4bb030e6661b5c602b4c30b57c54a89fc[m
+Merge: fd6366b 8aa17f3
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:58:07 2023 +0100
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit fee0d37a0fcbfe51d981b32ec15cae33a9073e0d[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 08:57:40 2023 +0100
+
+    --
+
+[33mcommit fd6366bd637e26a403e1d3b669cdd0539ff49680[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:55:03 2023 +0100
+
+    +playlists
+
+[33mcommit 8aa17f32ed77181e5cc4a6ca743f9c2437db4614[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 08:53:40 2023 +0100
+
+    debut d'anim
+
+[33mcommit 5f464771fa90e7c24a344ebf4cebb21aecb6c473[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:46:57 2023 +0100
+
+    +songs
+
+[33mcommit 836ac83834f5bf936cf40663fa5e92e6ee117667[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 08:36:30 2023 +0100
+
+    gratis
+
+[33mcommit 0e276d0692c81ddae2d1343ddc0d9b5fdd90c747[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 08:33:36 2023 +0100
+
+    merch
+
+[33mcommit 2a8174c91a55e5dd6571928a4226e0888bd892f9[m
+Merge: 5506d7c f1c2368
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:32:48 2023 +0100
+
+    sauce
+
+[33mcommit f1c236845f99ce5e2850475aa1fa463f5d8cd290[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 08:25:20 2023 +0100
+
+    stock ki marche
+
+[33mcommit 5506d7c923ef410832ef70b594fe84c518b72f47[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:25:02 2023 +0100
+
+    merch
+
+[33mcommit 92cc356df3e415a948c4c2926503de9afc7568cc[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 21 08:17:11 2023 +0100
+
+    fix nav bar
+
+[33mcommit ecbcf66e888040e63a3163bc1d332cf3e954def3[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:14:23 2023 +0100
+
+    +imgs
+
+[33mcommit 90b97fed05aad61e1ed3efbf1c27054fecf4d532[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 21 08:06:28 2023 +0100
+
+    +imgs
+
+[33mcommit bbb625d42d07f04c3a8b6e244c867bcdd66dd0f8[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 20 12:04:17 2023 +0100
+
+    petit fix
+
+[33mcommit 7a2303b02a4840174a4b850095179363faae7d9c[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 20 11:59:29 2023 +0100
+
+    exemple pour chaque categorie
+
+[33mcommit d323d2bc32200ce4e89dee9fbc5b1a4d8b719f6e[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 10 12:25:38 2023 +0100
+
+    c'est pt
+
+[33mcommit f3aafec32e188e9678395d336822373a50b6ae8c[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Thu Mar 9 12:58:43 2023 +0100
+
+    bouton buy fait
+
+[33mcommit df5cc8c16e6f31a9cac86ccc06363fb542a5851d[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Thu Mar 9 12:27:46 2023 +0100
+
+    todo
+
+[33mcommit 4c1108e66e8a99655dd04422b983e63569c261ef[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Thu Mar 9 12:22:33 2023 +0100
+
+    ajout de sons, faut en rerajouter
+
+[33mcommit 6cf15ea9abc19bc17155545bd061d7ca29344153[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Thu Mar 9 12:12:33 2023 +0100
+
+    js pour ajouter une quantite aux produits et afficher son stock
+
+[33mcommit bc4a924c1055d2f1552c16d405d0501fa78ca194[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Thu Mar 9 12:11:34 2023 +0100
+
+    js pour ajouter une quantite aux produits et afficher son stock
+
+[33mcommit 03b6eb97016405363d3f6da76463bc018ebef761[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Wed Mar 8 12:19:45 2023 +0100
+
+    je suis un dieu
+
+[33mcommit a4265aa5aba1863d8dc41d1cc941d7c0d5590f5b[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Wed Mar 8 11:58:16 2023 +0100
+
+    je suis tro for'
+
+[33mcommit f2b7bfaebcffa8cea7795283013031e87b2e2985[m
+Merge: 531dbe7 b4f6013
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 7 15:32:22 2023 +0100
+
+    Merge branch 'main' of https://github.com/blj64/DEVWEB_ING1 into main
+
+[33mcommit 531dbe76e62a7b9ea3994edc14cbd3b63ce7e93a[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 7 15:30:27 2023 +0100
+
+    oui oui
+
+[33mcommit b4f6013e898310af97f3dd2577d8b2a94cb3d799[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 7 10:47:31 2023 +0100
+
+    4+contact
+
+[33mcommit 3b3f4a0cb89e6eb5437fc478c33247da5ba5cd49[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 7 10:41:45 2023 +0100
+
+    +++contact
+
+[33mcommit c2976ac9236a9250eae1b332d0f6b2c77601d3ce[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 7 10:32:20 2023 +0100
+
+    ++contact
+
+[33mcommit a96fba9c10c6c6e7a39d7ef88bdd306bb0a221d6[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Tue Mar 7 10:12:07 2023 +0100
+
+    +contact
+
+[33mcommit 18f2c407a912cbc89394c25f9ffde383a99ba50e[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 7 10:06:29 2023 +0100
+
+    je commence le js pour augmenter le nombre d'achat dans songs
+
+[33mcommit c7acf8edebad899700158a28b9f931757d1e3090[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 7 10:03:50 2023 +0100
+
+    oh yeah
+
+[33mcommit 54955da978f2cd1b5991befdb10a0009e61b9618[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 7 10:03:05 2023 +0100
+
+    nomenclature des songs walah t'as intere a les respecter, faudra utiliser this dans le jhava script
+
+[33mcommit 6058cda7a7f3e6f07652f2d29b8530e7de04326e[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Tue Mar 7 09:27:26 2023 +0100
+
+    y a r
+
+[33mcommit 5985c43827e977c3f708ef89c99c556566f0f793[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 22:54:44 2023 +0100
+
+    songs avance
+
+[33mcommit 7d3905021aea7c574433744a34314f5e59cd60b1[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 22:18:41 2023 +0100
+
+    ajout dans song des features obligatoire, faut tt le css et le js
+
+[33mcommit e7c6bdf38df9522a43025285b407b35966054bca[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 21:37:13 2023 +0100
+
+    bouton panier modif, à ameliorer
+
+[33mcommit e16664835201365d85f52582decba73d8937328e[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 15:30:31 2023 +0100
+
+    rompiche
+
+[33mcommit c823548f426b324c3891138786b2a3e6132ee837[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 10:41:25 2023 +0100
+
+    ct mie avan
+
+[33mcommit a99638ac8efb9105ad3895dea96ea121ada25709[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 10:15:10 2023 +0100
+
+    contact logo fixe: prbl de hierarchie
+
+[33mcommit e8c528968333c90e30069d3869ef830d173aa66b[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 10:09:59 2023 +0100
+
+    ajout de musique + zoom effect
+
+[33mcommit 1373b4a2104da387ab0e0a5e5aaf4dd1374f4049[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 09:01:03 2023 +0100
+
+    gneu
+
+[33mcommit 93373f0fac7ced22d6c8355f69822c3c663366f7[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Mon Mar 6 08:23:19 2023 +0100
+
+    rangement
+
+[33mcommit ffa9b93b401c8c444e3b6c381a66618600986e2a[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sun Mar 5 23:26:20 2023 +0100
+
+    panier ajouter, page sons commence, creation des pages
+
+[33mcommit a70c423944112cc33c4b27bb1d176267b7bb945c[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sun Mar 5 15:41:29 2023 +0100
+
+    page contact relie au reste whala on dirait ph
+
+[33mcommit 8f60d4046ab2e5491e9f89feaeea280acd918ca8[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sun Mar 5 14:59:56 2023 +0100
+
+    scroll effect main
+
+[33mcommit eabdbd5434cd46d56f32565c5b4f8ee5a7c9d4ec[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 23:54:05 2023 +0100
+
+    home page commence
+
+[33mcommit 1e2deca0bb0d2c47fe86308e121c22b970943b0a[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 23:06:02 2023 +0100
+
+    yar
+
+[33mcommit eaa0720ad7d6aeba58a78e661d6414fd928ed974[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 23:00:30 2023 +0100
+
+    header, footer and main positions fixed
+
+[33mcommit c0309a93688d313d565ebfe35fb74bfafcc43815[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 14:55:10 2023 +0100
+
+    je rearange un peu tt
+
+[33mcommit d4c94a5db6c2c3232bae85f5cf19d5beaa8487ad[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 14:14:31 2023 +0100
+
+    header and footer positions fixed, normalement la main-section peut etre scrolle sans que le reste bouge
+
+[33mcommit 7a0c9977daa8b5ef9c0acf8ac969e0b8e598495f[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 14:06:42 2023 +0100
+
+    header modif
+
+[33mcommit a7f6c0fb37039207bd18eb4b389bad4ac46f691b[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 13:51:19 2023 +0100
+
+    search bar upgrade le click du btn search
+
+[33mcommit 97a9f1e00558f22be3d18cf744934d7b505a75de[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Sat Mar 4 13:38:22 2023 +0100
+
+    footer en bas + hover effect on navbar fixed
+
+[33mcommit 56880a08ec2c074616014526a6320c7cec2f49b4[m
+Merge: cc37aa4 1324dd2
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 14:12:29 2023 +0100
+
+    Merge branch 'main' of https://github.com/blj64/DEVWEB_ING1 into main
+
+[33mcommit cc37aa44861c4e1f45968dc1a5e737d3e815baff[m
+Merge: 3372831 6fc759f
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 13:00:44 2023 +0100
+
+    head
+
+[33mcommit 1324dd244fa955284605def12e075ec4788be1ee[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 12:59:05 2023 +0100
+
+    test
+
+[33mcommit 21c7e9c02abc23dbc14102a1f53b50c38bce6b6a[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 12:56:51 2023 +0100
+
+    aligned
+
+[33mcommit 3372831a147c3c76b3d226ce1ef4fd764d4ed8e9[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 12:42:51 2023 +0100
+
+    header un peu avance
+
+[33mcommit 6fc759f7aa4f390a13647fdaf52aeda574b7d19b[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 12:35:21 2023 +0100
+
+    alignement
+
+[33mcommit a7fcb92bd9e62e11ad46bb720bda3dbbee555655[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 12:32:06 2023 +0100
+
+    stylé
+
+[33mcommit 948839acf9786d6ca754d46ecf35abf488b780c3[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 12:22:29 2023 +0100
+
+    button
+
+[33mcommit 9fbb2cd4f6b22615c711fe2b60f0b502e99fcc94[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 12:13:21 2023 +0100
+
+    contact+
+
+[33mcommit 60101d282ca767d62295ce4ae2898b4f5fe09c6e[m
+Merge: 146ce36 916f012
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 11:52:57 2023 +0100
+
+    Merge branch 'main' of https://github.com/blj64/DEVWEB_ING1 into main
+
+[33mcommit 146ce369c469b6a502db9a0c466d29568b23f03d[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 11:51:19 2023 +0100
+
+    header avance, homogehenisation des colors
+
+[33mcommit 916f0129be7fee29a9d39170b52aae1fd64a7839[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 11:48:54 2023 +0100
+
+    update page contact
+
+[33mcommit 36e761d89bb5504d4fe1ac14eb70291708278267[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 11:13:08 2023 +0100
+
+    ajout page contact
+
+[33mcommit 364e7a3731c0740ef0bad2d02a1cb8c49b3f7751[m
+Merge: 4002a06 74b8d7c
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 11:09:14 2023 +0100
+
+    test
+
+[33mcommit 74b8d7c0a665d235ecca6e191decfc286f4f11ff[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 10:59:11 2023 +0100
+
+    designMode et bdd
+
+[33mcommit 4002a06423ddfa5ee16efad4d8a9661aed0e259b[m
+Author: couziremi <couziremi@cy-tech.fr>
+Date:   Fri Mar 3 10:59:03 2023 +0100
+
+    test
+
+[33mcommit 8971aa8834e65751293e7c9dbb00f8f5014fe807[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 10:43:16 2023 +0100
+
+    Source pour s'inspirer du theme PH et palette de couleur
+
+[33mcommit 36d52de4ba51214448aae5d12c68520f099645b7[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 10:39:43 2023 +0100
+
+    dossier js
+
+[33mcommit 94a0c38578e7d94e1c6dee09434ad2cdab67275c[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 10:38:12 2023 +0100
+
+    squelette
+
+[33mcommit 5861ff6d6d7cdc1f0f84f3fcaa2298bcb06f45e1[m
+Author: jlb64 <jliogerbun+github@gmail.com>
+Date:   Fri Mar 3 10:37:28 2023 +0100
+
+    squelette
+
+[33mcommit 6f7b2bce8782bb2e2947e9050bcdfbb134d12e1c[m
+Author: blj64 <126865294+blj64@users.noreply.github.com>
+Date:   Fri Mar 3 10:22:23 2023 +0100
+
+    JS code to get data from spotify api
+
+[33mcommit f7c34ee504808d4245747137a9192edb056b92c7[m
+Author: blj64 <126865294+blj64@users.noreply.github.com>
+Date:   Fri Mar 3 10:16:35 2023 +0100
+
+    Initial commit
