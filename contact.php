@@ -12,18 +12,20 @@
                 </div>
                 
                 <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
-                
-                <form id="contact-form" action="index.php" method="GET" onsubmit="return validerSaisies();"> 
+                <?php echo $_SESSION["error"]; ?>
+                <form id="contact-form" action="emailing.php" method="POST" onsubmit="return validerSaisies();"> 
                     <div>
                     <b><label for="name">Name*</label></b><br>
                     <input type="text" id="name" class="input-bar" name="name">
-                    <span id="error-name" class="error-message"></span><br>
+                    <span id="error-name" class="error-message"><?php echo $_SESSION["nameErr"]; ?></span><br>
+                    
                     </div>
                   
                     <div>
                       <b><label for="email">Mail*</label></b><br>
-                      <input type="email" id="email" class="input-bar" name="email">
-                      <span id="error-email" class="error-message"></span><br>
+                      <input type="text" id="email" class="input-bar" name="email">
+                      <span id="error-email" class="error-message"><?php echo $_SESSION["emailErr"]; ?></span><br>
+                      
                     </div>
                   
                     <div>
@@ -54,7 +56,8 @@
                     <div>
                       <b><label for="message">Contenu*</label></b><br>
                       <textarea cols="50" id="message" class="input-area" name="message"></textarea><br>
-                      <span id="error-message" class="error-message"></span><br>
+                      <span id="error-message" class="error-message"><?php echo $_SESSION["messageErr"]; ?></span><br>
+                      
                     </div>
                   
                     <input type="submit" class="orange-button" value="Envoyer"/>

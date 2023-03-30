@@ -23,6 +23,7 @@ function validerSaisies() {
     const nameRegex = /^[a-zA-Z\s]*$/;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+    /*
     if(name != "") //si la saisie est non vide
     {
       // si il n'y a pas de caracteres interdits et que la saisie est non vide
@@ -70,7 +71,7 @@ function validerSaisies() {
       messageError.innerHTML = "Champ obligatoire";
       validation_message = false;
     }
-    
+    */
 
 
 

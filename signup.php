@@ -1,7 +1,3 @@
-<?php 
-  session_start(); 
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,7 +16,6 @@
                 echo "<div class=error> Identifiant ou mot de passe erroné <br/></div>";
               }
               ?>
-              <?php echo $_SESSION["error"]; ?>
               <!-------------------------------->
         			<form class="login" action="index.php" method="POST">
         				<div class="login__field">

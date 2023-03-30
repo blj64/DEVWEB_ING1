@@ -3,6 +3,7 @@
 
     session_start();
 
+    /*
     if (!isset($_SESSION["type"])){
 
         $verif=false;
@@ -24,6 +25,7 @@
             exit();
         }
     }
+    */
     
     include "header.php";
 
