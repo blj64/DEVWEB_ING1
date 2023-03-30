@@ -37,5 +37,12 @@
                 <a class="nav-link-a" href="goodies.php"><div class="nav-link">MERCH</div></a>
                 <a class="nav-link-a" href="contact.php"><div class="nav-link">CONTACT</div></a>
             </nav>
+
+            <div>
+                <button>Log in</button>
+                <button>Sign up</button>
+                <button>Deconnexion</button>
+                <p>Bienvenue Nom prenom</p>
+            </div>
         </header>
     
