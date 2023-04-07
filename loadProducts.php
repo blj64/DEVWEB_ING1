@@ -32,7 +32,7 @@
 
     if (($file = fopen("./data2.csv", "r")) !== FALSE) {
         for ($i=0; $i < 1; $i++) { 
-            while(($data = fgetcsv($file, $_SESSION['current_song'],";")) !== false) {
+            while(($data = fgetcsv($file, 1000  ,";")) !== false) {
                 $_SESSION['current_song']++;
                 
                 $dataRef = "'".$data[0]."-".$data[1]."'";

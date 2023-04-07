@@ -19,6 +19,17 @@
 
 
         </div>
+        <div id="connection-div">
+                <?php
+                    if (isset($_SESSION["login"]) && isset($_SESSION["mdp"])) {
+                        echo '<button class="connection-btn" id="logout_button" onclick="window.location.href=\'deconnexion.php\'">Log out</button>';
+                        echo '<p id="p-msg-welcome">Bienvenue '.$_SESSION["nom"].'</p>';
+                    }else{
+                        echo '<button class="connection-btn" id="login_button" onclick="window.location.href=\'connexion.php\'">Log in</button>';
+                        echo '<button class="connection-btn" id="signup_button" onclick="window.location.href=\'signup.php\'">Sign up</button>';
+                    }
+                ?>
+            </div>
             <div id="header-top">
                 <h1><span id="white">Rock </span><span id="orange">hub</span></h1>
                 <div id="search-bar">
@@ -38,11 +49,6 @@
                 <a class="nav-link-a" href="contact.php"><div class="nav-link">CONTACT</div></a>
             </nav>
 
-            <div>
-                <button id="login_button" onclick="window.location.href='connexion.php'">Log in</button>
-                <button id="signup_button" onclick="window.location.href='signup.php'">Sign up</button>
-                <button id="logout_button" onclick="window.location.href='deconnexion.php'">Log out</button>
-                <p>Bienvenue Nom prenom</p>
-            </div>
+            
         </header>
     

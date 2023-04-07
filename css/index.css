@@ -118,6 +118,23 @@ h1 {
     margin-left: 30px;
     width: max-content;
 }
+#connection-div {
+    float: right;
+    margin: 20px;
+    display: flex;
+}
+.connection-btn {
+    background-color: rgb(255,163,26);
+    color: black;
+    border-radius: 5px;
+    padding: 3px;
+    height: max-content;
+    font-weight: bold;
+    margin-left: 30px;
+    width: max-content;
+    border: none;
+    margin-right:10px ;
+}
 nav {
     display: flex;
     padding: 5px;
