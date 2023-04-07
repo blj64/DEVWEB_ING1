@@ -3,8 +3,8 @@
 
     session_start();
 
-    /*
-    if (!isset($_SESSION["type"])){
+    
+    if (!isset($_SESSION["nom"])){
 
         $verif=false;
         if (($handle = fopen("users/users.csv", "r")) !== FALSE) {
@@ -25,7 +25,6 @@
             exit();
         }
     }
-    */
     
     include "header.php";
 
