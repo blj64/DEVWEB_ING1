@@ -48,6 +48,7 @@
                         So whether you're looking for the latest French rock hits, expertly curated playlists, or exclusive merch, RockHub has got you covered. Start exploring today and discover the best of French rock music!</span>
     
                 </div>
+                
                 <div id="logo-rockhub">
                     <div>Rock</div>
                     <div id="orange">Hub</div>

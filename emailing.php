@@ -42,8 +42,13 @@
     //Redirection
     if (empty($_SESSION["nameErr"]) && empty($_SESSION["emailErr"]) && empty($_SESSION["messageErr"]))
     {
+
+        echo "<script>alert('Le message a été envoyé avec succès !');
+        window.location.href='index.php';
+        </script>";
         $_SESSION["error"] = "redirection vers index";
-        header('Location: index.php');
+
+        
     }
     else
     {
