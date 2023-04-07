@@ -23,8 +23,8 @@
         <div id="connection-div">
                 <?php
                     if (isset($_SESSION["login"]) && isset($_SESSION["mdp"])) {
+                        echo '<p id="p-msg-welcome">Welcome '.$_SESSION["nom"].'</p>';
                         echo '<button class="orange-btn" class="connection-btn" id="logout_button" onclick="window.location.href=\'deconnexion.php\'">Log out</button>';
-                        echo '<p id="p-msg-welcome">Bienvenue '.$_SESSION["nom"].'</p>';
                     }else{
                         echo '<button class="orange-btn" class="connection-btn" id="login_button" onclick="window.location.href=\'connexion.php\'">Log in</button>';
                         echo '<button class="orange-btn" class="connection-btn" id="signup_button" onclick="window.location.href=\'signup.php\'">Sign up</button>';
