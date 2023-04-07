@@ -4,7 +4,7 @@
     session_start();
 
     
-    if (!isset($_SESSION["nom"])){
+    if (!isset($_SESSION["login"])){
 
         $verif=false;
         if (($handle = fopen("users/users.csv", "r")) !== FALSE) {
