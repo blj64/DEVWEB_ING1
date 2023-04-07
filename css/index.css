@@ -108,33 +108,33 @@ h1 {
     
     color: black;
 }
-#panier-header{
+
     
+.orange-btn {
     background-color: rgb(255,163,26);
     color: black;
     border-radius: 5px;
     padding: 3px;
     font-weight: bold;
     margin-left: 30px;
+    border: none;
+
     width: max-content;
+} 
+.orange-btn:hover {
+    background-color: rgb(252, 169, 44);
+    transform: scale(1.1);
+}
+.orange-btn:active{
+    background-color: rgb(237, 154, 30);
+    transform: scale(0.8);
 }
 #connection-div {
     float: right;
     margin: 20px;
     display: flex;
 }
-.connection-btn {
-    background-color: rgb(255,163,26);
-    color: black;
-    border-radius: 5px;
-    padding: 3px;
-    height: max-content;
-    font-weight: bold;
-    margin-left: 30px;
-    width: max-content;
-    border: none;
-    margin-right:10px ;
-}
+
 nav {
     display: flex;
     padding: 5px;
