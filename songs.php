@@ -2,7 +2,18 @@
     include "header.php";
 ?>
         <section id="main-section">
-            
+        <script>
+		function loadSong() {
+			var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "loadProducts.php")
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("songs").innerHTML += this.responseText;
+				}
+			};
+            xhttp.send();
+		}
+	</script>
             <div id="songs">
                 <div class="song" data-reference="RadioSong-Superbus" id="song-RadioSong-Superbus">
                     <img class="song-img" data-reference="RadioSong-Superbus" id="song-img-RadioSong-Superbus" src="../img/img1.jpeg" height="200px" width="200px" alt="">
@@ -89,11 +100,11 @@
                 </div>
 
                 
-
             </div>
+            <button id="loadBtn" onclick="loadSong()">Charger plus</button>
 
         </section>
 
 <?php 
     include "footer.php";
-?>
+?>  
