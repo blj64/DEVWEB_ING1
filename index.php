@@ -1,9 +1,8 @@
 <?php 
-    
-
     session_start();
 
-    
+    $cnx = mysqli_connect('serveur','user','pas')
+
     if (!isset($_SESSION["login"])){
 
         $verif=false;
@@ -27,7 +26,6 @@
     }
     
     include "header.php";
-
 ?>
 
         <section id="main-section">

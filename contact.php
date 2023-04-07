@@ -12,7 +12,7 @@
                 </div>
                 
                 <p>Vous pouvez nous contacter en complétant le formulaire ci-dessous</p><br>
-                <?php echo $_SESSION["error"]; ?>
+                <!-- ?php echo $_SESSION["error"]; ?-->
                 <form id="contact-form" action="emailing.php" method="POST" onsubmit="return validerSaisies();"> 
                     <div>
                     <b><label for="name">Name*</label></b><br>
