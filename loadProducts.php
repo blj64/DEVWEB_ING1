@@ -28,13 +28,12 @@
         }
     }
 
-    $current_song = isset($_SESSION['current_song']) ? $_SESSION['current_song'] : 1;
 
     if (($file = fopen("./data2.csv", "r")) !== FALSE) {
-        for ($i=0; $i < 1; $i++) { 
-            while(($data = fgetcsv($file, 1000  ,";")) !== false) {
-                $_SESSION['current_song']++;
-                
+        
+            
+            for ($i=0; $i < $_SESSION['current-song']+4; $i++) { 
+                if((($data = fgetcsv($file, 1000  ,";")) !== false) && ($i >= $_SESSION['current-song'])){
                 $dataRef = "'".$data[0]."-".$data[1]."'";
 
                 echo"
@@ -53,12 +52,12 @@
                         </div>
                         <button class='buy' data-reference=".$dataRef." id='buy-".$data[0]."-".$data[1]."'>+</button>
                     </div>";
-                
+                }
             }
+            $_SESSION['current_song']+=4;
+            echo "<script>console.log(".$_SESSION['current_song'].")</script>";
+
         }
 
-    }
+    
     fclose($file);
-
-
-?>
