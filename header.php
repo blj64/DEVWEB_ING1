@@ -49,13 +49,13 @@ session_start();
                 <a class="nav-link-a" href="./index.php">
                     <div class="nav-link">HOME</div>
                 </a>
-                <a class="nav-link-a" href="./songs.php">
+                <a class="nav-link-a" href="./produits.php?category=songs">
                     <div class="nav-link">SONGS</div>
                 </a>
-                <a class="nav-link-a" href="./playlist.php">
+                <a class="nav-link-a" href="./produits.php?category=playlist">
                     <div class="nav-link">PLAYLIST</div>
                 </a>
-                <a class="nav-link-a" href="./goodies.php">
+                <a class="nav-link-a" href="./produits.php?category=goodies">
                     <div class="nav-link">MERCH</div>
                 </a>
                 <a class="nav-link-a" href="./contact.php">

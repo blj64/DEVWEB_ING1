@@ -1,6 +1,4 @@
-<?php
-include "header.php";
-?>
+
 <section id="main-section">
     <script>
         function loadSong() {
@@ -105,6 +103,3 @@ include "header.php";
 
 </section>
 
-<?php
-include "footer.php";
-?>
