@@ -11,7 +11,7 @@ include "header.php";
     }
     ?>
     <?php echo $_SESSION["error"]; ?>
-    <form class="login" action="index.php" method="POST">
+    <form class="login" action="/index.php" method="POST">
 
       <div class="login__field">
         <input type="text" name="login" placeholder="Username" class="login__input">

@@ -207,6 +207,6 @@ class __TwigTemplate_9e695d4996d5ab54ff92ecf1808e2f0d169c7bf726c4f40ec80cb73953a
 
     public function getSourceContext()
     {
-        return new Source("", "header.twig", "/home/cytech/Cours/Web/Projets/DEVWEB_ING1/phpmyadmin/templates/header.twig");
+        return new Source("", "header.twig", "/home/cytech/devweb/CoverGuesser/DEVWEB_ING1/phpmyadmin/templates/header.twig");
     }
 }

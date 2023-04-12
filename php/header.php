@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
 
     <script src="js/index.js"></script>
     <script src="js/form.js"></script>
@@ -26,10 +26,10 @@ session_start();
                 <?php
                 if (isset($_SESSION["login"]) && isset($_SESSION["mdp"])) {
                     echo '<p id="p-msg-welcome">Welcome ' . $_SESSION["nom"] . '</p>';
-                    echo '<button class="orange-btn" class="connection-btn" id="logout_button" onclick="window.location.href=\'deconnexion.php\'">Log out</button>';
+                    echo '<button class="orange-btn" class="connection-btn" id="logout_button" onclick="window.location.href=\'/php/deconnexion.php\'">Log out</button>';
                 } else {
-                    echo '<button class="orange-btn" class="connection-btn" id="login_button" onclick="window.location.href=\'connexion.php\'">Log in</button>';
-                    echo '<button class="orange-btn" class="connection-btn" id="signup_button" onclick="window.location.href=\'signup.php\'">Sign up</button>';
+                    echo '<button class="orange-btn" class="connection-btn" id="login_button" onclick="window.location.href=\'/php/connexion.php\'">Log in</button>';
+                    echo '<button class="orange-btn" class="connection-btn" id="signup_button" onclick="window.location.href=\'/php/signup.php\'">Sign up</button>';
                 }
                 ?>
             </div>
@@ -46,19 +46,19 @@ session_start();
 
             </div>
             <nav>
-                <a class="nav-link-a" href="./index.php">
+                <a class="nav-link-a" href="../index.php">
                     <div class="nav-link">HOME</div>
                 </a>
-                <a class="nav-link-a" href="./produits.php?category=songs">
+                <a class="nav-link-a" href="/php/produits.php?category=songs">
                     <div class="nav-link">SONGS</div>
                 </a>
-                <a class="nav-link-a" href="./produits.php?category=playlist">
+                <a class="nav-link-a" href="/php/produits.php?category=playlist">
                     <div class="nav-link">PLAYLIST</div>
                 </a>
-                <a class="nav-link-a" href="./produits.php?category=goodies">
+                <a class="nav-link-a" href="/php/produits.php?category=goodies">
                     <div class="nav-link">MERCH</div>
                 </a>
-                <a class="nav-link-a" href="./contact.php">
+                <a class="nav-link-a" href="/php/contact.php">
                     <div class="nav-link">CONTACT</div>
                 </a>
             </nav>

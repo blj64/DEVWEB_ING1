@@ -178,6 +178,6 @@ echo _gettext("Git information missing!");
 
     public function getSourceContext()
     {
-        return new Source("", "footer.twig", "/home/cytech/Cours/Web/Projets/DEVWEB_ING1/phpmyadmin/templates/footer.twig");
+        return new Source("", "footer.twig", "/home/cytech/devweb/CoverGuesser/DEVWEB_ING1/phpmyadmin/templates/footer.twig");
     }
 }

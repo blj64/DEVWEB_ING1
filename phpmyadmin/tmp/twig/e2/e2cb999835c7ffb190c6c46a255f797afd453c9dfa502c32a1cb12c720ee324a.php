@@ -353,6 +353,6 @@ echo _gettext("Log in");
 
     public function getSourceContext()
     {
-        return new Source("", "login/form.twig", "/home/cytech/Cours/Web/Projets/DEVWEB_ING1/phpmyadmin/templates/login/form.twig");
+        return new Source("", "login/form.twig", "/home/cytech/devweb/CoverGuesser/DEVWEB_ING1/phpmyadmin/templates/login/form.twig");
     }
 }

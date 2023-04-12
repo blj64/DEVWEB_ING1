@@ -44,7 +44,7 @@
     {
 
         echo "<script>alert('Le message a été envoyé avec succès !');
-        window.location.href='index.php';
+        window.location.href='/index.php';
         </script>";
         $_SESSION["error"] = "redirection vers index";
 
@@ -53,7 +53,7 @@
     else
     {
         $_SESSION["error"] = "redirection vers contact";
-        header('Location: contact.php');
+        header('Location: /php/contact.php');
     }
     
 ?>
