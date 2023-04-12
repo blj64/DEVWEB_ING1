@@ -57,7 +57,7 @@ include "header.php";
         </div>
     </div>
     <div class="main-section-div" id="songs-section">
-        <img id="songs-logo" src="./img/songsLogo.png" height="300px" width="300px" alt="">
+        <a href="./produits.php?category=songs"><img id="songs-logo" src="./img/songsLogo.png" height="300px" width="300px" alt=""></a>
         <span class="span-text">Our collection of free French rock songs is a tribute to the vibrant and diverse music scene in France. From classic rock to modern pop-rock, we offer a wide variety of songs that showcase the incredible range of French rock music.
 
             Our songs are performed by some of the most talented musicians and bands from France, and each track has been carefully selected to provide a unique listening experience. Some of our most popular songs include "Les Enfants Terribles" by Lescop, "La Vie Est Belle" by Indochine, and "Sur Un Prélude De Bach" by Maurane.
@@ -67,8 +67,7 @@ include "header.php";
             So why wait? Start exploring our collection today and discover the amazing world of French rock music for yourself!</span>
     </div>
     <div class="main-section-div" id="playlist-section">
-        <img id="playlist-logo" style="color: white;" alt="playlist" src="./img/play-list-fill.svg" width="300" height="300">
-
+        <a href="./produits.php?category=playlist"><img id="playlist-logo" style="color: white;" alt="playlist" src="./img/play-list-fill.svg" width="300" height="300"></a>
         <span class="span-text">Introducing our hand-curated collection of French rock music playlists, featuring some of the best and most popular tracks from the French rock scene. Our playlists offer a unique and diverse listening experience that is perfect for fans of all kinds of rock music.
 
             Our playlists are created by music experts who have a deep passion for French rock music, and each one is carefully crafted to take you on a musical journey that is both exciting and immersive. Whether you're looking for high-energy tracks to get you pumped up, or more mellow tunes to relax to, our playlists have you covered.
@@ -86,7 +85,7 @@ include "header.php";
             Not only are our French rock music t-shirts stylish and comfortable, but they also make the perfect gift for the music lover in your life. And with our affordable prices, you can stock up on all your favorite designs without breaking the bank.
 
             So why wait? Browse our collection of French rock music t-shirts today and show your love for the incredible world of French rock music!</span>
-        <img id="merch-logo" src="./img/noirdesir.png" alt="tshirt">
+        <a href="./produits.php?category=goodies"><img id="merch-logo" src="./img/noirdesir.png" alt="tshirt"></a>
     </div>
 
     <div class="main-section-div" id="creators">
