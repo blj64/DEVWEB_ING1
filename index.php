@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-<?php
-session_start();
 
-$cnx = mysqli_connect('localhost', 'root', '');
-
-if (!isset($_SESSION["login"])) {
-=======
 <?php 
     session_start();
     
@@ -15,7 +8,6 @@ if (!isset($_SESSION["login"])) {
         </script>";
     };
     if (!isset($_SESSION["login"])){
->>>>>>> refs/remotes/origin/main
 
     $verif = false;
     if (($handle = fopen("users/users.csv", "r")) !== FALSE) {
