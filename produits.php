@@ -1,10 +1,9 @@
 <?php
 include "header.php";
-if (file_exists($_GET['category'])) {
+if (isset($_GET['category'])) {
     $category=$_GET["category"].".php";
-    include $category;
-}else{
-    include "./songs.php";
+    include (file_exists($category)? $category:include"./songs.php");
+    
 }
 
 
