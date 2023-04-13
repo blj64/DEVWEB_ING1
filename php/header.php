@@ -37,8 +37,8 @@ session_start();
                 <h1><span id="white">Rock </span><span id="orange">hub</span></h1>
                 <div id="search-bar">
                     <input class="input-bar" type="text" placeholder="Search 5436 music">
-                    <div id="search-logo"><img src="./img/loupe.png" alt="O\" height="15" width="20"></div>
-                    <a href="./panier.php">
+                    <div id="search-logo"><img src="/img/loupe.png" alt="O\" height="15" width="20"></div>
+                    <a href="/php/panier.php">
 
                         <div class="orange-btn" id="panier-header">panier</div>
                     </a>
