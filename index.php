@@ -2,6 +2,7 @@
 <?php 
     session_start();
     
+    
     /*
     $cnx = mysqli_connect('localhost','root','');
     if (mysqli_connect_errno($cnx)) {
@@ -11,37 +12,23 @@
     */    
     if (!isset($_SESSION["login"])){
     
-
-    $verif = false;
-    if (($handle = fopen("users/users.csv", "r")) !== FALSE) {
-        while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE) && !$verif) {
-            if ($_POST["login"] == $data[1] && md5($_POST["password"]) == $data[2]) {
-                $verif = true;
-                $_SESSION["nom"] = $data[0];
-
-                $_SESSION["login"] = $data[1];
-                $_SESSION["mdp"] = $_POST["password"]; // !! le mdp est stocké dans l'autre fichier !!
-
-                $produit = array(
-                    'apercu' => 'apercuuu',
-                    'type' => 'typex',
-                    'reference' => 'ref',
-                    'quantite' => 8,
-                    'prix' => 4.5
-                );
-
-                $produits = $produit;
-
-                $_SESSION["panier"] = $produits;
+        $verif = false;
+        if (($handle = fopen("./csv/users.csv", "r")) !== FALSE) {
+            while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE) && !$verif) {
+                if ($_POST["login"] == $data[1] && md5($_POST["password"]) == $data[2]) {
+                    $verif = true;
+                    $_SESSION["nom"] = $data[0];
+                    $_SESSION["login"] = $data[1];
+                    
+                }
             }
+            fclose($handle);
         }
-        fclose($handle);
-    }
 
-    if (!$verif) {
-        header('Location: /php/connexion.php?error=true');
-        exit();
-    }
+        if (!$verif) {
+            header('Location: /php/connexion.php?error=true');
+            exit();
+        }
 }
 
 include "./php/header.php";

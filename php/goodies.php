@@ -3,25 +3,27 @@
             
             <div id="merch">
                 <?php 
-            
+                session_start();
+
                 foreach ($_SESSION["produits"]["merch"] as $merch)
                 {
                     echo "
                     <div class=\"merch\" data-reference=\"".$merch['id']."\" id=\"merch-".$merch['id']."\">
-                        <img class=\"merch-img\" data-reference=\"".$merch['id']."\" id=\"merch-img-".$merch['id']."\" src=\"../img/".$merch['cover']."\" height=\"200px\" width=\"200px\" alt=\"\">
-                        <h2 class=\"merch-name\" data-reference=\"".$merch['id']."\" id=\"merch-name-".$merch['id']."\">".$merch['name']."</h2>
-                        <h3 class=\"merch-artist\" data-reference=\"".$merch['id']."\" id=\"merch-artist-".$merch['id']."\">".$merch['complement']."</h3>
-                        <div class=\"stock\" data-reference=\"".$merch['id']."\" id=\"merch-stock-".$merch['id']."\">
-                            <button class=\"show-stock\" data-reference=\"".$merch['id']."\" id=\"show-stock-".$merch['id']."\">stock</button>
-                            <div class=\"stock-number\" data-reference=\"".$merch['id']."\" id=\"stock-number-".$merch['id']."\">10</div>
-                        </div>
-                        <div class=\"quantity\" data-reference=\"".$merch['id']."\" id=\"quantity-".$merch['id']."\">
-                            <button class=\"quantity-less\" data-reference=\"".$merch['id']."\" id=\"quantity-less-".$merch['id']."\">-</button>
-                            <input class=\"quantity-number\" min=\"0\" data-reference=\"".$merch['id']."\" id=\"quantity-number-".$merch['id']."\" type=\"number\" value=\"".$merch['stock']."\" onkeypress=\"return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))\">
-                            <button class=\"quantity-more\" data-reference=\"".$merch['id']."\" id=\"quantity-more-".$merch['id']."\">+</button>
-                        </div>
-                        <button class=\"buy\" data-reference=\"".$merch['id']."\" id=\"buy-".$merch['id']."\">+</button>
+                    <img class=\"merch-img\" data-reference=\"".$merch['id']."\" id=\"merch-img-".$merch['id']."\" src=\"../img/".$merch['cover']."\" height=\"200px\" width=\"200px\" alt=\"\">
+                    <h2 class=\"merch-name\" data-reference=\"".$merch['id']."\" id=\"merch-name-".$merch['id']."\">".$merch['name']."</h2>
+                    <h3 class=\"merch-artist\" data-reference=\"".$merch['id']."\" id=\"merch-artist-".$merch['id']."\">".$merch['complement']."</h3>
+                    <div class=\"stock\" data-reference=\"".$merch['id']."\" id=\"merch-stock-".$merch['id']."\">
+                        <button class=\"show-stock\" data-reference=\"".$merch['id']."\" id=\"show-stock-".$merch['id']."\">stock</button>
+                        <div class=\"stock-number\" data-reference=\"".$merch['id']."\" id=\"stock-number-".$merch['id']."\">10</div>
+                    </div>
+                    <div class=\"quantity\" data-reference=\"".$merch['id']."\" id=\"quantity-".$merch['id']."\">
+                        <button class=\"quantity-less\" data-reference=\"".$merch['id']."\" id=\"quantity-less-".$merch['id']."\">-</button>
+                        <input class=\"quantity-number\" min=\"0\" data-reference=\"".$merch['id']."\" id=\"quantity-number-".$merch['id']."\" type=\"number\" value=\"".$merch['stock']."\" onkeypress=\"return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))\">
+                        <button class=\"quantity-more\" data-reference=\"".$merch['id']."\" id=\"quantity-more-".$merch['id']."\">+</button>
+                    </div>
+                    <button class=\"buy\" data-reference=\"".$merch['id']."\" id=\"buy-".$merch['id']."\">+</button>
                     </div>";
+  
                 }
 
                 

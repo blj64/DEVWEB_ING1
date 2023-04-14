@@ -15,6 +15,7 @@
 
     <div id="songs">
         <?php 
+        session_start();
         
         foreach ($_SESSION["produits"]["song"] as $song)
         {

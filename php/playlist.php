@@ -5,6 +5,7 @@
             <div id="playlist">
 
                 <?php 
+                session_start();
         
                 foreach ($_SESSION["produits"]["playlist"] as $playlist)
                 {

@@ -1,0 +1,16 @@
+song;Radio Song;Superbus;10;img1.jpeg;superbus
+song;L'Aventurier;Indochine;20;img2.jpeg;indochine
+song;L'Homme pressé;Noir Désir;15;img3.jpeg;NoirDesir
+song;J't'emmène au vent;Superbus;5;louiseattaque.jpeg;LouiseAttaque
+song;Lèche-bottes blues;Superbus;30;eddy.jpeg;EddyMitchell
+playlist;100% Desert Rock;Stoner;12;desertRock.jpeg;stoner
+playlist;100% Rock Français;Rock;30;rockfr.jpeg;RockFrancais
+playlist;100% Acoustic;Solo;15;acoustic.jpeg;solo
+playlist;100% Métal Industriel;Métal;55;californianrock.jpeg;metal
+playlist;100% Rock Californien;Rock;20;desertRock.jpeg;RockCalifornien
+merch;SuperBus T-Shirt;XS to XXL;19;superbus.png;superbus
+merch;Slomosa T-Shirt;XS to XXL;20;slomosa.png;slomosa
+merch;Red Hot Chili Peppers T-Shirt;XS to XXL;34;rhcp.png;rhcp
+merch;Noir Désir T-Shirt;XS to XXL;25;noirdesir.png;NoirDesir
+merch;Indochine T-Shirt;XS to XXL;10;indochine.png;indochine
+category;name;complement;stock;cover;id

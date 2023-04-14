@@ -1,9 +1,56 @@
 <?php
 session_start();
 
-$_SESSION['login'] = $_POST['login'];
-echo "compte de ".$_SESSION['login']."";
+//$_SESSION['login'] = $_POST['login'];
+//echo "compte de ".$_SESSION['login']."";
 
+$_SESSION["test"] = "okayyyyy";
+
+$_SESSION["produits"] = array(
+    "song" => [],
+    "playlist" => [],
+    "merch" => []
+);
+
+if (($handle = fopen("../csv/products.csv", "r")) !== FALSE) {
+    while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE)) {
+        if ($data[0] == "song" or $data[0] == "playlist" or $data[0] == "merch")
+        {
+            $temp = array(
+                "name" => $data[1],
+                "complement" => $data[2],
+                "stock" => $data[3],
+                "cover" => $data[4],
+                "id" => $data[5]
+            );
+        }
+        if ($data[0] == "song") {
+            array_push($_SESSION["produits"]["song"], $temp);
+        }
+        if ($data[0] == "playlist") {
+            array_push($_SESSION["produits"]["playlist"], $temp);
+        }
+        if ($data[0] == "merch") {
+            array_push($_SESSION["produits"]["merch"], $temp);
+        }
+
+    }
+    fclose($handle);
+}
+
+$produit = array(
+    'apercu' => 'apercuuu',
+    'type' => 'typex',
+    'reference' => 'ref',
+    'quantite' => 8,
+    'prix' => 4.5
+);
+
+$produits = $produit;
+
+$_SESSION["panier"] = $produits;
+
+/*
 $_SESSION["produits"] = array (
     "song" => array(
         array(
@@ -117,5 +164,6 @@ $_SESSION["produits"] = array (
         )
     )
 );
+*/
 
 ?>
