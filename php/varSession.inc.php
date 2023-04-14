@@ -38,17 +38,25 @@ if (($handle = fopen("../csv/products.csv", "r")) !== FALSE) {
     fclose($handle);
 }
 
-$produit = array(
-    'apercu' => 'apercuuu',
-    'type' => 'typex',
-    'reference' => 'ref',
-    'quantite' => 8,
-    'prix' => 4.5
+//test
+$_SESSION["panier"] = array(
+    array(
+        'apercu' => 'apercuuu',
+        'type' => 'typex',
+        'reference' => 'ref',
+        'quantite' => 8,
+        'prix' => 4.5
+    ),
+    array(
+        'apercu' => '2222',
+        'type' => 'typey',
+        'reference' => 'ref2',
+        'quantite' => 23,
+        'prix' => 6.9
+    )
 );
 
-$produits = $produit;
 
-$_SESSION["panier"] = $produits;
 
 /*
 $_SESSION["produits"] = array (
