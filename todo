@@ -2,3 +2,26 @@ ranger les php dans php
 faire la div connexion dans le header
 ajouter stock aleatoire dans song et loadproduct
 https://www.youtube.com/watch?v=S0mR_Gl7Rg4&ab_channel=FormationVid%C3%A9o
+
+==>
+
+➢ Créer un fichier PHP « varSession.inc.php » contenant les variables de session dont
+le tableau des catégories avec les produits et leurs informations.
+
+➢ Simplifier l’écriture des menus à l’aide de ce tableau. Cette modification devra
+fonctionner si vous modifier le nombre de catégories dans le tableau.
+Modifier le lien d’appel des catégories pour appeler une seule page prenant en
+paramètre la catégorie à afficher. Par exemple :
+http://produits.php?cat=roses
+
+➢ Créer cette page unique permettant d'afficher les produits de la catégorie passée en
+paramètre de l'adresse en utilisant le tableau précédent.
+
+➢ Transférer les informations des catégories et produits dans un fichier au format texte,
+XML ou JSON (vous ferez des recherches dessus). Au démarrage du site, charger
+ces informations dans le tableau catégories.
+On s’intéresse maintenant à la connexion des utilisateurs.
+
+
+
+➢ Gérer le panier pendant la session de l'utilisateur, grâce aux données de session.

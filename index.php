@@ -2,12 +2,15 @@
 <?php 
     session_start();
     
+    /*
     $cnx = mysqli_connect('localhost','root','');
     if (mysqli_connect_errno($cnx)) {
         echo "<script>alert('Impossible de se connecter a la bdd');
         </script>";
     };
+    */    
     if (!isset($_SESSION["login"])){
+    
 
     $verif = false;
     if (($handle = fopen("users/users.csv", "r")) !== FALSE) {
@@ -18,6 +21,18 @@
 
                 $_SESSION["login"] = $data[1];
                 $_SESSION["mdp"] = $_POST["password"]; // !! le mdp est stocké dans l'autre fichier !!
+
+                $produit = array(
+                    'apercu' => 'apercuuu',
+                    'type' => 'typex',
+                    'reference' => 'ref',
+                    'quantite' => 8,
+                    'prix' => 4.5
+                );
+
+                $produits = $produit;
+
+                $_SESSION["panier"] = $produits;
             }
         }
         fclose($handle);
