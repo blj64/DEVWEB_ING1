@@ -2,12 +2,13 @@
     include "header.php";
 ?>
 
+<script src="/js/form.js"></script>
 
         <section id="main-section">
             <section id="main" class="formulaire">
                 
                 <div class="titre">
-                    <img src="../img/contactLogo.png" width="80px" height="80px" alt="lettre">
+                    <img src="/img/contactLogo.png" width="80px" height="80px" alt="lettre">
                     <h2 id="contact-title">Formulaire de contact</h2>
                 </div>
                 

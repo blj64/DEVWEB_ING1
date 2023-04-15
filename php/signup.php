@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Connexion</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" type="image/png" href="img/icon.png" />
-  </head>
-  <body>
-    <div>
+<?php 
+  include "header.php";
+  ?>
+
+<section id="main-section">
+
         <div class="container">
         	<div class="screen">
         		<div class="screen__content">
@@ -17,7 +13,7 @@
               }
               ?>
               <!-------------------------------->
-        			<form class="login" action="index.php" method="POST">
+        			<form class="login" action="/index.php" method="POST">
         				<div class="login__field">
         					<i class="login__icon fas fa-user"></i>
         					<input type="text" name="login" placeholder="Username" class="login__input">
@@ -56,7 +52,9 @@
 
 
         </div>
-    </div>
 
-</body>
-</html>
+</section>
+<?php 
+  include "footer.php";
+  ?>
+

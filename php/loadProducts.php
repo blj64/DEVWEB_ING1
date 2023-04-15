@@ -2,7 +2,6 @@
     session_start();
     
 
-
     class Product {
         protected string $name;
         protected string $owner;
@@ -29,7 +28,7 @@
     }
 
 
-    if (($file = fopen("./data2.csv", "r")) !== FALSE) {
+    if (($file = fopen("../data2.csv", "r")) !== FALSE) {
         
             
             for ($i=0; $i < $_SESSION['current-song']+4; $i++) { 

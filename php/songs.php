@@ -3,7 +3,7 @@
     <script>
         function loadSong() {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "loadProducts.php")
+            xhttp.open("POST", "/php/loadProducts.php")
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("songs").innerHTML += this.responseText;

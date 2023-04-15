@@ -6,10 +6,9 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 
-    <script src="js/index.js"></script>
-    <script src="js/form.js"></script>
     <title>RockHub</title>
 </head>
 
@@ -37,7 +36,7 @@ session_start();
                 <h1><span id="white">Rock </span><span id="orange">hub</span></h1>
                 <div id="search-bar">
                     <input class="input-bar" type="text" placeholder="Search 5436 music">
-                    <div id="search-logo"><img src="/img/loupe.png" alt="O\" height="15" width="20"></div>
+                    <div id="search-logo"><img src="../img/loupe.png" alt="O\" height="15" width="20"></div>
                     <a href="/php/panier.php">
 
                         <div class="orange-btn" id="panier-header">panier</div>
@@ -46,7 +45,7 @@ session_start();
 
             </div>
             <nav>
-                <a class="nav-link-a" href="../index.php">
+                <a class="nav-link-a" href="/index.php">
                     <div class="nav-link">HOME</div>
                 </a>
                 <a class="nav-link-a" href="/php/produits.php?category=songs">

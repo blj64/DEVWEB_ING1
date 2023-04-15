@@ -2,7 +2,6 @@ const more = document.getElementsByClassName("quantity-more");
 const less = document.getElementsByClassName("quantity-less");
 const stockBtn = document.getElementsByClassName("show-stock");
 const addBtn = document.getElementsByClassName("buy")
-
 let article = class {
     constructor(type, reference, quantity, price) {
         this.type = type
@@ -16,6 +15,7 @@ let panier = []
 
 
 for (let i = 0; i < more.length; i++) {
+    
     more[i].addEventListener("click", () => {
         stockValue = document.getElementById("stock-number-"+more[i].dataset.reference).innerHTML
         if (stockValue > 0) {

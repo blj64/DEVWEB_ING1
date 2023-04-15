@@ -1,7 +1,8 @@
 
 <?php 
     session_start();
-    
+    include "./php/header.php";
+
     $cnx = mysqli_connect('localhost','root','');
     if (mysqli_connect_errno($cnx)) {
         echo "<script>alert('Impossible de se connecter a la bdd');
@@ -29,7 +30,6 @@
     }
 }
 
-include "./php/header.php";
 ?>
 
 <section id="main-section">
