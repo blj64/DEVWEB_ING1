@@ -29,30 +29,26 @@
     else
     {
         if (!(filter_var($email, FILTER_VALIDATE_EMAIL))) {
-            $_SESSION["emailErr"] = "L'adresse e-mail est invalide.";
+            $_SESSION["emailErr"] = "Email is invalid";
         }   
     }
 
     //Message Validation  
     if (strlen ($message) < 10) 
     {
-        $_SESSION["messageErr"] = "Le message doit au moins etre d'au moins 10 caracteres";
+        $_SESSION["messageErr"] = "Message must be at least 10 characters long";
     }  
 
     //Redirection
     if (empty($_SESSION["nameErr"]) && empty($_SESSION["emailErr"]) && empty($_SESSION["messageErr"]))
     {
 
-        echo "<script>alert('Le message a été envoyé avec succès !');
+        echo "<script>alert('The message has been sent successfully !');
         window.location.href='/index.php';
         </script>";
-        $_SESSION["error"] = "redirection vers index";
-
-        
     }
     else
     {
-        $_SESSION["error"] = "redirection vers contact";
         header('Location: /php/contact.php');
     }
     

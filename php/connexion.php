@@ -7,11 +7,11 @@ include "header.php";
     <h2>Login</h2>
     <?php
     if ($_GET["error"]) {
-      echo "<div class=error> Identifiant ou mot de passe erroné <br/></div>";
+      echo "<div class=error> Identifiant ou mot de passe erroné ; 0=".$_SESSION["zero"]." <br/></div>";
     }
     ?>
     <?php echo $_SESSION["error"]; ?>
-    <form class="login" action="/index.php" method="POST">
+    <form class="login" action="../index.php" method="POST">
 
       <div class="login__field">
         <input type="text" name="login" placeholder="Username" class="login__input">

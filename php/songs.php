@@ -12,8 +12,34 @@
             xhttp.send();
         }
     </script>
+
     <div id="songs">
-        <div class="song" data-reference="RadioSong-Superbus" id="song-RadioSong-Superbus">
+        <?php 
+        session_start();
+        
+        foreach ($_SESSION["produits"]["song"] as $song)
+        {
+            echo "
+            <div class=\"song\" data-reference=\"".$song['id']."\" id=\"song-".$song['id']."\">
+                <img class=\"song-img\" data-reference=\"".$song['id']."\" id=\"song-img-".$song['id']."\" src=\"../img/".$song['cover']."\" height=\"200px\" width=\"200px\" alt=\"\">
+                <h2 class=\"song-name\" data-reference=\"".$song['id']."\" id=\"song-name-".$song['id']."\">".$song['name']."</h2>
+                <h3 class=\"song-artist\" data-reference=\"".$song['id']."\" id=\"song-artist-".$song['id']."\">".$song['complement']."</h3>
+                <div class=\"stock\" data-reference=\"".$song['id']."\" id=\"song-stock-".$song['id']."\">
+                    <button class=\"show-stock\" data-reference=\"".$song['id']."\" id=\"show-stock-".$song['id']."\">stock</button>
+                    <div class=\"stock-number\" data-reference=\"".$song['id']."\" id=\"stock-number-".$song['id']."\">10</div>
+                </div>
+                <div class=\"quantity\" data-reference=\"".$song['id']."\" id=\"quantity-".$song['id']."\">
+                    <button class=\"quantity-less\" data-reference=\"".$song['id']."\" id=\"quantity-less-".$song['id']."\">-</button>
+                    <input class=\"quantity-number\" min=\"0\" data-reference=\"".$song['id']."\" id=\"quantity-number-".$song['id']."\" type=\"number\" value=\"".$song['stock']."\" onkeypress=\"return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))\">
+                    <button class=\"quantity-more\" data-reference=\"".$song['id']."\" id=\"quantity-more-".$song['id']."\">+</button>
+                </div>
+                <button class=\"buy\" data-reference=\"".$song['id']."\" id=\"buy-".$song['id']."\">+</button>
+            </div>";
+        }
+
+        
+        ?>
+        <!--div class="song" data-reference="RadioSong-Superbus" id="song-RadioSong-Superbus">
             <img class="song-img" data-reference="RadioSong-Superbus" id="song-img-RadioSong-Superbus" src="../img/img1.jpeg" height="200px" width="200px" alt="">
             <h2 class="song-name" data-reference="RadioSong-Superbus" id="song-name-RadioSong-Superbus">Radio Song</h2>
             <h3 class="song-artist" data-reference="RadioSong-Superbus" id="song-artist-RadioSong-Superbus">Superbus</h3>
@@ -95,7 +121,7 @@
                 <button class="quantity-more" data-reference="LecheBottesBlues-Eddy Mitchell" id="quantity-more-LecheBottesBlues-Eddy Mitchell">+</button>
             </div>
             <button class="buy" data-reference="LecheBottesBlues-Eddy Mitchell" id="buy-LecheBottesBlues-Eddy Mitchell">+</button>
-        </div>
+        </div-->
 
 
     </div>

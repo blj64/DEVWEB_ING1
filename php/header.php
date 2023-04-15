@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "varSession.inc.php";
 ?>
 
 <!DOCTYPE html>
@@ -56,6 +57,9 @@ session_start();
                 </a>
                 <a class="nav-link-a" href="/php/produits.php?category=goodies">
                     <div class="nav-link">MERCH</div>
+                </a>
+                <!--a class="nav-link-a" href="/php/produits.php?category=goodies">
+                    <div class="nav-link">SHOP</div-->
                 </a>
                 <a class="nav-link-a" href="/php/contact.php">
                     <div class="nav-link">CONTACT</div>

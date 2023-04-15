@@ -16,13 +16,30 @@ include "header.php";
                 <th>Quantite</th>
                 <th>Prix</th>
             </tr>
+            
+                <?php
+                
+                $total = 0;
+                
+                foreach ($_SESSION["panier"] as $ligne)
+                {
+                    echo "<tr>";
+                    foreach ($ligne as $value)
+                    {
+                        echo "<th>".$value."</th>"; 
+                    }
+                    $total = $total + $ligne["quantite"]*$ligne["prix"];
+                    echo "</tr>";
+                }
+                ?>
+            
 
         </table>
 
 
         <div id="panier-total">
             <h2>Total</h2>
-            <span>0€</span>
+            <span><?php echo $total ?>€</span>
         </div>
     </div>
 </section>
