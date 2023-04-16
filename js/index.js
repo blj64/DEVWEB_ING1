@@ -1,4 +1,4 @@
-/*
+/* ---------POUR-GERER-LES-STOCKS------
 const more = document.getElementsByClassName("quantity-more");
 const less = document.getElementsByClassName("quantity-less");
 const stockBtn = document.getElementsByClassName("show-stock");
@@ -107,33 +107,3 @@ function ajouterQuantitePanier(id) {
 
 
 
-function panierLoad() {
-    
-    const table = document.getElementById("panier-article-table")
-    if (panier.length != 0) {
-        panier.forEach(article => {
-            const newRow = document.createElement("tr")
-            const newPreview = document.createElement("th")
-            const newType = document.createElement("th")
-            const newReference = document.createElement("th")
-            const newQuantity = document.createElement("th")
-            const newPrice = document.createElement("th")
-
-            const newPreviewImg = document.createElement("img")
-            newPreviewImg.setAttribute("src", "../img/rickroll.jpg")
-            newPreviewImg.setAttribute("width", "100")
-            newPreviewImg.setAttribute("height", 100)
-            newPreview.append(newPreviewImg)
-
-            newType.textContent(panier.type)
-            newReference.textContent(panier.reference)
-            newQuantity.textContent(panier.quantity)
-            newPrice.textContent(panier.price)
-
-            newRow.append(newPreview, newType, newReference, newQuantity,newPrice)
-            table.append(newRow)
-            console.log("test");
-
-        });
-    }
-}

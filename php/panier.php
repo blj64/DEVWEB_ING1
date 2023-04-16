@@ -2,29 +2,27 @@
 include "header.php";
 ?>
 <section id="main-section">
-
-
-    <h1>panier</h1>
+    <h1>Panier</h1>
     <div id="panier-body">
         <div id="panier-article"></div>
-        <h2>Article</h2>
-        <table id="panier-article-table">
-            <tr>
-                <th>Apercu</th>
-                <th>Reference</th>
-                <th>Quantite</th>
-                <th>P.U.</th>
-            </tr>
-            
-                <?php
-
+ 
+                <?php 
                 $total = 0;
                 if (count($_SESSION["panier"]) == 0)
                 {
-                    echo "Le panier est vide";
+                    echo "Le panier est vide <br><br>";
+
+                    
                 }
                 else
                 {
+                    echo "<table id=\"panier-article-table\">
+                        <tr>
+                            <th>Apercu</th>
+                            <th>Reference</th>
+                            <th>Quantité</th>
+                            <th>P.U.</th>
+                        </tr>";
                     foreach ($_SESSION["panier"] as $ligne)
                     {
                         echo "<tr>";
@@ -43,15 +41,14 @@ include "header.php";
                         $total = $total + $ligne["quantite"]*$ligne["prix"];
                         echo "</tr>";
                     }
+                    echo "</table>";
+
+                    echo "<div id=\"panier-total\">
+                    <h2>Total</h2>
+                    <span>".$total."€</span>
+                    </div>";
                 }
-                
-                ?>
-
-        </table>
-
-        <div id="panier-total">
-            <h2>Total</h2>
-            <span><?php echo $total ?>€</span>
+        ?>
         </div>
     </div>
 </section>

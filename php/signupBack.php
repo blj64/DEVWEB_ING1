@@ -1,4 +1,5 @@
 <?php 
+    
     $newLogin = $_POST['login'];
     $newPassword = $_POST['password'];
     $newName = $_POST['nom'];
@@ -17,11 +18,15 @@
     
     if ($verif && ($_POST['password'] != "") && ($_POST['nom'] != "") && ($_POST['login'] != "")) {
         fputcsv($handle, $newUser, ";");
-        header("Location: /php/connexion.php");
-    }else{
-        header('Location: /php/signup.php?error=true');
+        $_SESSION["nom"] = $newName;
+        $_SESSION["login"] = $newLogin;
+        fclose($handle);
+        header("Location: panier.php");
 
+    }else{
+        fclose($handle);
+        header('Location: /php/signup.php?error=true');
     }
-    fclose($handle);
+    
     exit();
 ?>
