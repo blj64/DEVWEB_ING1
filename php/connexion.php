@@ -7,7 +7,7 @@ include "header.php";
     <h2>Login</h2>
     <?php
     if ($_GET["error"]) {
-      echo "<div class=error> Identifiant ou mot de passe erroné ; 0=".$_SESSION["zero"]." <br/></div>";
+      echo "<div class=error> Identifiant ou mot de passe erroné";
     }
     ?>
     <?php echo $_SESSION["error"]; ?>
