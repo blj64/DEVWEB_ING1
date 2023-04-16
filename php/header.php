@@ -53,7 +53,7 @@ include "varSession.inc.php";
                 <a class="nav-link-a" href="/php/produits.php?category=songs">
                     <div class="nav-link">SONGS</div>
                 </a>
-                <a class="nav-link-a" href="/php/produits.php?category=playlist">
+                <a class="nav-link-a" href="/php/produits.php?category=playlists">
                     <div class="nav-link">PLAYLIST</div>
                 </a>
                 <a class="nav-link-a" href="/php/produits.php?category=goodies">
