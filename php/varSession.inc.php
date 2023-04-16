@@ -22,8 +22,8 @@ if (!isset($_SESSION['loaded']))
                     "stock" => $data[3],
                     "cover" => $data[4],
                     "id" => $data[5],
-                    "panier" => 0,
                     "prix" => $data[6],
+                    "panier" => 0                    
                 );
             }
             if ($data[0] == "song") {

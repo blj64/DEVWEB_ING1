@@ -29,7 +29,7 @@ foreach ($_SESSION["produits"] as $type)
                     {
                         //produit deja dans le panier
                         $temp = array(
-                            'apercu' => $ligne['cover'],
+                            'apercu' => $ligne['apercu'],
                             'reference' => $ligne['reference'],
                             'quantite' => $quantite + $ligne['quantite'],
                             'prix' => $ligne['prix']
