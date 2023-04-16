@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-//unset($_SESSION['loaded']);
 if (!isset($_SESSION['loaded']))
 {
     $json_file = '../data/products.json';
@@ -20,7 +19,7 @@ if (!isset($_SESSION['loaded']))
     $_SESSION["panier"] = array(
         array()
     );
-    //pour ne pas reappeler 
+
     $_SESSION['loaded'] = true;
 }
 

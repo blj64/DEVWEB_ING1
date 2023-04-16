@@ -76,6 +76,11 @@ function decrementer(id) {
 function ajouterQuantitePanier(id) {
     var quantiteElement = document.getElementById("quantity-number-"+id);
     var quantite = parseInt(quantiteElement.innerHTML);
+    if (quantite == 0)
+    {
+        return;
+    }
+    
 
     // Création d'un formulaire
     var form = document.createElement("form");
