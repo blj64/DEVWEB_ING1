@@ -4,6 +4,7 @@ include "header.php";
 <section id="main-section">
 
   <div id="connexion">
+
     <h2>Login</h2>
     <?php
     if ($_GET["error"]) {
@@ -12,12 +13,11 @@ include "header.php";
     ?>
     <?php echo $_SESSION["error"]; ?>
     <form class="login" action="../index.php" method="POST">
-
-        <input type="text" name="login" placeholder="Username" >
-        <input type="password" name="password" placeholder="Password" >
-     
-      <input  type="submit" value="Connexion">
-
+      <div id="login-form">
+        <input type="text" name="login" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Connexion" id="submit-btn">
+      </div>
     </form>
   </div>
 

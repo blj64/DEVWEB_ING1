@@ -345,25 +345,45 @@ a:visited {
 #contact-section {
     background-color: rgb(255, 163, 26);
 }
+
+
 #connexion {
     z-index: 50;
     background-color: rgb(255, 163, 26);
     margin-top: auto;
     margin-bottom: auto;
     margin: 40px;
-    height: 80%;
+    height: 50%;
     padding: 60px;
     border-radius: 20px;
     text-align: center;
 }
-#connexion>form {
-    margin: auto;
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.login>input {
+
+#login-form>input {
     background-color: #292929;
     color: white;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 3px;
+    width: min-content;
 }
+#login-form>input:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+
+}
+
+#submit-btn:active {
+    transform: scale(0.9);
+}
+
 #songs,
 #playlist,
 #merch {
@@ -494,3 +514,4 @@ footer {
     font-size: 1rem;
     margin-top: 0.5rem;
 }
+

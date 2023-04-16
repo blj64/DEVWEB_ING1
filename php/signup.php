@@ -13,15 +13,17 @@ include "header.php";
 		?>
 		<!-------------------------------->
 		<form class="login" action="/php/signupBack.php" method="POST">
+			<div id="login-form">
 				<input type="text" name="login" placeholder="Username">
 				<input type="text" name="nom" placeholder="Name">
-				<input type="password" name="password" placeholder="Password" >
-			<input type="submit" value="Inscription">
+				<input type="password" name="password" placeholder="Password">
+				<input type="submit" value="Inscription" id="submit-btn">
 
+			</div>
 		</form>
 
 		<!---here----------------------------->
-		
+
 
 	</div>
 
@@ -29,3 +31,4 @@ include "header.php";
 <?php
 include "footer.php";
 ?>
+
