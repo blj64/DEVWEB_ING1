@@ -1,6 +1,5 @@
 <?php
 include "header.php";
-
 ?>
     <script src="/js/index.js"></script>
 <?php

@@ -106,6 +106,7 @@ function ajouterQuantitePanier(id) {
 }
 
 
+
 function panierLoad() {
     
     const table = document.getElementById("panier-article-table")

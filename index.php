@@ -10,11 +10,10 @@
         </script>";
     };
     */
-     
-    if (!isset($_SESSION["login"])){
-    
+    if (!isset($_SESSION["login"]))
+    {
         $verif = false;
-        if (($handle = fopen("./csv/users.csv", "r")) !== FALSE) {
+        if (($handle = fopen("./data/users.csv", "r")) !== FALSE) {
             while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE) && !$verif) {
                 if ($_POST["login"] == $data[1] && md5($_POST["password"]) == $data[2]) {
                     $verif = true;
@@ -24,13 +23,14 @@
                 }
             }
             fclose($handle);
+            header('Location: /index.php');
         }
 
         if (!$verif) {
             header('Location: /php/connexion.php?error=true');
             exit();
         }
-}
+    }
 
 ?>
 

@@ -1,23 +1,15 @@
 <?php 
     include "header.php";
 ?>
-<<<<<<< HEAD
 
 <script src="/js/form.js"></script>
 
-=======
->>>>>>> refs/remotes/origin/main
         <section id="main-section">
             <section id="main" class="formulaire">
                 
                 <div class="titre">
-<<<<<<< HEAD
-                    <img src="/img/contactLogo.png" width="80px" height="80px" alt="lettre">
-                    <h2 id="contact-title">Formulaire de contact</h2>
-=======
                     <img src="../img/contactLogo.png" width="80px" height="80px" alt="lettre">
                     <h2 id="contact-title">Contact form</h2>
->>>>>>> refs/remotes/origin/main
                 </div>
                 
                 <p>You can contact us by completing the form below</p><br>
