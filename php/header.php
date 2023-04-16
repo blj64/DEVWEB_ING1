@@ -56,7 +56,7 @@ include "varSession.inc.php";
                 <a class="nav-link-a" href="/php/produits.php?category=playlists">
                     <div class="nav-link">PLAYLIST</div>
                 </a>
-                <a class="nav-link-a" href="/php/produits.php?category=goodies">
+                <a class="nav-link-a" href="/php/produits.php?category=merch">
                     <div class="nav-link">MERCH</div>
                 </a>
                 <!--a class="nav-link-a" href="/php/produits.php?category=goodies">
