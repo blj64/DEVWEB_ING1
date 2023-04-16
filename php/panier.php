@@ -13,7 +13,7 @@ include "header.php";
                 <span class="title-panier-description">Quantity</span>
                 <span class="title-panier-description">Price</span>
             </div>
-            <br><br><br>
+   
             <div id="article-panier">
          
                 <?php
