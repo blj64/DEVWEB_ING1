@@ -41,7 +41,6 @@
 
         <div id="introduction-home">
             <span class="span-text">
-                Everything is free !!!!<br>
                 Welcome to RockHub, the ultimate destination for all things French rock music! At RockHub, we're passionate about bringing you the best French rock music, playlists and merch in one convenient location.
 
                 Our extensive selection of French rock music includes both classic and contemporary hits from some of the most popular French rock bands and artists. Whether you're a die-hard fan or a newcomer to the genre, we've got something for everyone.
