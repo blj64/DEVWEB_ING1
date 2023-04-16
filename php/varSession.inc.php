@@ -21,7 +21,9 @@ if (($handle = fopen("../csv/products.csv", "r")) !== FALSE) {
                 "complement" => $data[2],
                 "stock" => $data[3],
                 "cover" => $data[4],
-                "id" => $data[5]
+                "id" => $data[5],
+                "panier" => 0,
+                "prix" => $data[6]
             );
         }
         if ($data[0] == "song") {

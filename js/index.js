@@ -1,3 +1,4 @@
+/*
 const more = document.getElementsByClassName("quantity-more");
 const less = document.getElementsByClassName("quantity-less");
 const stockBtn = document.getElementsByClassName("show-stock");
@@ -50,6 +51,58 @@ for (let i = 0; i < more.length; i++) {
     })
     
     
+}
+*/
+function incrementer(id,stock) {
+    var valeurElement = document.getElementById("quantity-number-"+id);
+    var valeur = parseInt(valeurElement.innerHTML);
+    if (valeur < stock)
+    {
+        valeur++;
+    }
+    valeurElement.innerHTML = valeur;
+}
+
+function decrementer(id) {
+    var valeurElement = document.getElementById("quantity-number-"+id);
+    var valeur = parseInt(valeurElement.innerHTML);
+    if (valeur > 0)
+    {
+        valeur--;
+    }
+    valeurElement.innerHTML = valeur;
+}
+
+function ajouterQuantitePanier(id) {
+    var quantiteElement = document.getElementById("quantity-number-"+id);
+    var quantite = parseInt(quantiteElement.innerHTML);
+
+    // Création d'un formulaire
+    var form = document.createElement("form");
+    form.setAttribute("method", "post");
+    form.setAttribute("action", "updatePanier.php");
+
+    // Création d'un champ caché contenant la valeur de tableau à mettre à jour
+    var champTableauId = document.createElement("input");
+    champTableauId.setAttribute("type", "hidden");
+    champTableauId.setAttribute("name", "id");
+    champTableauId.setAttribute("value", id);
+    form.appendChild(champTableauId);
+    // Création d'un champ caché contenant la valeur de tableau à mettre à jour
+    var champTableauQuantite = document.createElement("input");
+    champTableauQuantite.setAttribute("type", "hidden");
+    champTableauQuantite.setAttribute("name", "quantite");
+    champTableauQuantite.setAttribute("value", quantite);
+    
+
+    form.appendChild(champTableauQuantite);
+
+    // Ajout du formulaire à la page et soumission du formulaire
+    document.body.appendChild(form);
+    form.submit();
+
+    // Suppression du formulaire de la page
+    document.body.removeChild(form);
 }
 
 

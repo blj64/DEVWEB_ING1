@@ -26,7 +26,7 @@ include "header.php";
                     echo "<tr>";
                     foreach ($ligne as $value)
                     {
-                        echo "<th>".$value."</th>"; 
+                        echo "<th>a".$value."</th>"; 
                     }
                     $total = $total + $ligne["quantite"]*$ligne["prix"];
                     echo "</tr>";

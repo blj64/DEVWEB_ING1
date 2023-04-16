@@ -24,7 +24,7 @@ include "varSession.inc.php";
             </div>
             <div id="connection-div">
                 <?php
-                if (isset($_SESSION["login"]) && isset($_SESSION["mdp"])) {
+                if (isset($_SESSION["login"])) {
                     echo '<p id="p-msg-welcome">Welcome ' . $_SESSION["nom"] . '</p>';
                     echo '<button class="orange-btn" class="connection-btn" id="logout_button" onclick="window.location.href=\'/php/deconnexion.php\'">Log out</button>';
                 } else {
