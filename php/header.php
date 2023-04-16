@@ -1,6 +1,7 @@
 <?php
 session_start();
-include "php/varSession.inc.php";
+//header('Location:  varSession.inc.php');
+include "varSession.inc.php";
 ?>
 
 <!DOCTYPE html>
