@@ -1,7 +1,6 @@
 
 <?php 
     session_start();
-    include "./php/header.php";
 
     /*
     $cnx = mysqli_connect('localhost','root','');
@@ -31,6 +30,8 @@
             exit();
         }
     }
+
+    include "./php/header.php";
 
 ?>
 

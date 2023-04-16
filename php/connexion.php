@@ -13,13 +13,10 @@ include "header.php";
     <?php echo $_SESSION["error"]; ?>
     <form class="login" action="../index.php" method="POST">
 
-      <div class="login__field">
-        <input type="text" name="login" placeholder="Username" class="login__input">
-      </div>
-      <div class="login__field">
-        <input type="password" name="password" placeholder="Password" class="login__input">
-      </div>
-      <input class="login__submit" type="submit" value="Connexion">
+        <input type="text" name="login" placeholder="Username" >
+        <input type="password" name="password" placeholder="Password" >
+     
+      <input  type="submit" value="Connexion">
 
     </form>
   </div>
