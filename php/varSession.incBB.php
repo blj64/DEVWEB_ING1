@@ -1,36 +1,18 @@
 <?php
 session_start();
 
-
 if (!isset($_SESSION['loaded']))
 {
+    
+    $_SESSION["test"] = "okayyyyy";
 
-    $json_file = '../data/products.json';
-    $json_str = file_get_contents($json_file);
-    $temp = json_decode($json_str, true);
-    $_SESSION["produits"] = $temp;
-    //$_SESSION["produits"]["song"] = $temp[0];
-    //$_SESSION["produits"]["playlist"] = $temp[1];
-    //$_SESSION["produits"]["merch"] = $temp[2];
+    $_SESSION["produits"] = array(
+        "song" => [],
+        "playlist" => [],
+        "merch" => []
+    );
 
-
-    print_r(array_keys($_SESSION["produits"]["songs"]));
-    echo "--------------------<br>";
-    foreach($_SESSION["produits"] as $type)
-    {
-        foreach($type as $produit)
-        {
-            foreach($produit as $valeur)
-            {
-                echo $valeur;
-            }
-            echo "<br>";
-        }
-        echo "<br>";
-    }
-
-    /*
-    if (($handle = fopen("../data/products.json", "r")) !== FALSE) {
+    if (($handle = fopen("../data/products.csv", "r")) !== FALSE) {
         while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE)) {
             if ($data[0] == "song" or $data[0] == "playlist" or $data[0] == "merch")
             {
@@ -57,7 +39,6 @@ if (!isset($_SESSION['loaded']))
         }
         fclose($handle);
     }
-    */
 
     //test
     $_SESSION["panier"] = array(
@@ -66,5 +47,4 @@ if (!isset($_SESSION['loaded']))
     //pour ne pas reappeler 
     $_SESSION['loaded'] = true;
 }
-
 ?>

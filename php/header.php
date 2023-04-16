@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "varSession.inc.php";
+include "php/varSession.inc.php";
 ?>
 
 <!DOCTYPE html>

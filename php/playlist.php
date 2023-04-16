@@ -7,7 +7,7 @@
                 <?php 
                 session_start();
         
-                foreach ($_SESSION["produits"]["playlist"] as $playlist)
+                foreach ($_SESSION["produits"]["playlists"] as $playlist)
                 {
                     echo "
                     <div class=\"playlist\" data-reference=\"".$playlist['id']."\" id=\"playlist-".$playlist['id']."\">

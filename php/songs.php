@@ -17,7 +17,7 @@
         <?php 
 
 
-        foreach ($_SESSION["produits"]["song"] as $song)
+        foreach ($_SESSION["produits"]["songs"] as $song)
         {
             echo "
             <div class=\"song\" data-reference=\"".$song['id']."\" id=\"song-".$song['id']."\">
