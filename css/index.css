@@ -384,28 +384,20 @@ a:visited {
     transform: scale(0.9);
 }
 
-#songs,
-#playlist,
-#merch {
+#article {
     padding: 70px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-
-
 }
 
-.song,
-.playlist,
-.merch {
+.article {
     flex: 50%;
     margin-bottom: 70px;
 
 }
 
-.song-img,
-.playlist-img,
-.merch-img {
+.article-img {
     padding: 50px;
 
     transition: transform .2s;
@@ -416,9 +408,7 @@ a:visited {
     margin: 0 auto;
 }
 
-.song-img:hover,
-.playlist-img:hover,
-.merch-img:hover {
+.article-img:hover {
     transform: scale(1.5);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

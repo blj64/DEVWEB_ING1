@@ -1,130 +1,118 @@
-[{
-    "name" : "Alex",
-    "age" :  "25",
-    "address" : "Paris"
-  }, {
-    "name" : "Emily",
-    "age" :  "18",
-    "address" : "Toulouse"
-  }, {
-    "name" : "Thomas",
-    "age" :  "22",
-    "address" : "Lile"
-  },
-  {
-    ""
-  }
-
-  "song" : {
-    
-  } array(
-  array(
-      "name" => "Radio Song",
-      "complement" => "Superbus",
-      "stock" => 10,
-      "cover" => "img1.jpeg",
-      "id" => "superbus"
-  ),
-  array(
-      "name" => "L'Aventurier",
-      "complement" => "Indochine",
-      "stock" => 20,
-      "cover" => "img2.jpeg",
-      "id" => "indochine"
-  ),
-  array(
-      "name" => "L'Homme pressé",
-      "complement" => "Noir Desir",
-      "stock" => 15,
-      "cover" => "img3.jpeg",
-      "id" => "NoirDesir"
-  ),
-  array(
-      "name" => "J't'emmène au vent",
-      "complement" => "Louise Attaque",
-      "stock" => 5,
-      "cover" => "louiseattaque.jpeg",
-      "id" => "LouiseAttaque"
-  ),
-  array(
-      "name" => "Lèche-bottes blues",
-      "complement" => "Eddy Mitchell",
-      "stock" => 30,
-      "cover" => "eddy.jpeg",
-      "id" => "EddyMitchell"
-  )
-),
-"playlist" => array(
-  array(
-      "name" => "100% Desert Rock",
-      "complement" => "Stoner",
-      "stock" => 12,
-      "cover" => "desertRock.jpeg",
-      "id" => "stoner"
-  ),
-  array(
-      "name" => "100% Rock Français",
-      "complement" => "Rock",
-      "stock" => 30,
-      "cover" => "rockfr.jpeg",
-      "id" => "RockFrancais"
-  ),
-  array(
-      "name" => "100% Acoustic",
-      "complement" => "Solo",
-      "stock" => 15,
-      "cover" => "acoustic.jpeg",
-      "id" => "solo"
-  ),
-  array(
-      "name" => "100% Métal Industriel",
-      "complement" => "Métal",
-      "stock" => 55,
-      "cover" => "metalindus.jpeg",
-      "id" => "metal"
-  ),
-  array(
-      "name" => "100% Rock Californien",
-      "complement" => "Rock",
-      "stock" => 20,
-      "cover" => "californianrock.jpeg",
-      "id" => "RockCalifornien"
-  )
-),
-"merch" => array(
-  array(
-      "name" => "SuperBus T-Shirt",
-      "complement" => "XS to XXL",
-      "stock" => 15,
-      "cover" => "superbus.png",
-      "id" => "superbus"
-  ),
-  array(
-      "name" => "Slomosa T-Shirt",
-      "complement" => "XS to XXL",
-      "stock" => 20,
-      "cover" => "slomosa.png",
-      "id" => "slomosa"
-  ),
-  array(
-      "name" => "Red Hot Chili Peppers T-Shirt",
-      "complement" => "XS to XXL",
-      "stock" => 34,
-      "cover" => "rhcp.png",
-      "id" => "rhcp"
-  ),
-  array(
-      "name" => "Noir DÃ©sir T-Shirt",
-      "complement" => "XS to XXL",
-      "stock" => 25,
-      "cover" => "noirdesir.png",
-      "id" => "NoirDesir"
-  ),
-  array(
-      "name" => "Indochine T-Shirt",
-      "complement" => "XS to XXL",
-      "stock" => 10,
-      "cover" => "indochine.png",
-      "id" => "indochine"
-  )
-]
+{
+    "songs" : [   
+        {
+            "name" : "Radio Song",
+            "complement" : "Superbus",
+            "stock" : 10,
+            "prix" : 9.99,
+            "cover" : "img1.jpeg",
+            "id" : "superbus"
+        }, {
+            "name" : "L'Aventurier",
+            "complement" : "Indochine",
+            "stock" : 20,
+            "prix" : 14.99,
+            "cover" : "img2.jpeg",
+            "id" : "indochine"
+        }, {
+            "name" : "L'Homme pressé",
+            "complement" : "Noir Desir",
+            "stock" : 15,
+            "prix" : 14.99,
+            "cover" : "img3.jpeg",
+            "id" : "NoirDesir"
+        },
+        {
+            "name" : "J't'emmène au vent",
+            "complement" : "Louise Attaque",
+            "stock" : 5,
+            "prix" : 9.99,
+            "cover" : "louiseattaque.jpeg",
+            "id" : "LouiseAttaque"
+        },
+        {
+            "name" : "Lèche-bottes blues",
+            "complement" : "Eddy Mitchell",
+            "stock" : 30,
+            "prix" : 5.99,
+            "cover" : "eddy.jpeg",
+            "id" : "EddyMitchell"
+        }
+    ],
+    "playlists" : [
+        {
+            "name" : "100% Desert Rock",
+            "complement" : "Stoner",
+            "stock" : 12,
+            "prix" : 19.99,
+            "cover" : "desertRock.jpeg",
+            "id" : "stoner"
+        }, {
+            "name" : "100% Rock Français",
+            "complement" : "Rock",
+            "stock" : 30,
+            "prix" : 19.99,
+            "cover" : "rockfr.jpeg",
+            "id" : "RockFrancais"
+        }, {
+            "name" : "100% Acoustic",
+            "complement" : "Solo",
+            "stock" : 15,
+            "prix" : 24.99,
+            "cover" : "acoustic.jpeg",
+            "id" : "solo"
+        }, {
+            "name" : "100% Métal Industriel",
+            "complement" : "Métal",
+            "stock" : 55,
+            "prix" : 24.99,
+            "cover" : "metalindus.jpeg",
+            "id" : "metal"
+        }, {
+            "name" : "100% Rock Californien",
+            "complement" : "Rock",
+            "stock" : 20,
+            "prix" : 24.99,
+            "cover" : "californianrock.jpeg",
+            "id" : "RockCalifornien"
+        }
+    ],
+    "merch" : [
+        {
+            "name" : "SuperBus T-Shirt",
+            "complement" : "XS to XXL",
+            "stock" : 15,
+            "prix" : 29.99,
+            "cover" : "superbus.png",
+            "id" : "superbusShirt"
+        }, {
+            "name" : "Slomosa T-Shirt",
+            "complement" : "XS to XXL",
+            "stock" : 20,
+            "prix" : 24.99,
+            "cover" : "slomosa.png",
+            "id" : "slomosa"
+        }, {
+            "name" : "Red Hot Chili Peppers T-Shirt",
+            "complement" : "XS to XXL",
+            "stock" : 34,
+            "prix" : 39.99,
+            "cover" : "rhcp.png",
+            "id" : "rhcp"
+        }, {
+            "name" : "Noir Désir T-Shirt",
+            "complement" : "XS to XXL",
+            "stock" : 25,
+            "prix" : 29.99,
+            "cover" : "noirdesir.png",
+            "id" : "NoirDesirShirt"
+        }, {
+            "name" : "Indochine T-Shirt",
+            "complement" : "XS to XXL",
+            "stock" : 10,
+            "prix" : 34.99,
+            "cover" : "indochine.png",
+            "id" : "indochineShirt"
+        }
+    ]
+}

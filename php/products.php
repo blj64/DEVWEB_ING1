@@ -1,10 +1,10 @@
 <?php
 include "header.php";
-echo "<script src=\"../js/index.js\"></script>";
+echo "<script src=\"/js/index.js\"></script>";
 
 if (isset($_GET['category'])) {
     
-    echo "<section id=\"main-section\"><div id=\"article\">";
+    echo "<section id=\"main-section\"><div id=\"".$_GET['category']."\">";
     foreach ($_SESSION["produits"][$_GET['category']] as $produit)
     {
         echo "
