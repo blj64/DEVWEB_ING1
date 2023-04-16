@@ -84,7 +84,7 @@
             "stock" : 15,
             "prix" : 29.99,
             "cover" : "superbus.png",
-            "id" : "superbus"
+            "id" : "superbusShirt"
         }, {
             "name" : "Slomosa T-Shirt",
             "complement" : "XS to XXL",
@@ -105,14 +105,14 @@
             "stock" : 25,
             "prix" : 29.99,
             "cover" : "noirdesir.png",
-            "id" : "NoirDesir"
+            "id" : "NoirDesirShirt"
         }, {
             "name" : "Indochine T-Shirt",
             "complement" : "XS to XXL",
             "stock" : 10,
             "prix" : 34.99,
             "cover" : "indochine.png",
-            "id" : "indochine"
+            "id" : "indochineShirt"
         }
     ]
 }
