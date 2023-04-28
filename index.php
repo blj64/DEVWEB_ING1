@@ -2,13 +2,7 @@
 <?php 
     session_start();
 
-    /*
-    $cnx = mysqli_connect('localhost','root','');
-    if (mysqli_connect_errno($cnx)) {
-        echo "<script>alert('Impossible de se connecter a la bdd');
-        </script>";
-    };
-    */
+    
     if (!isset($_SESSION["login"]))
     {
         $verif = false;
