@@ -20,9 +20,10 @@ Un compte par défaut est login = "defaut" et mot de passe = "defaut"
 Certaines images ont un effet lors du hover
 
 ## Execution
-Il suffit de faire la commande ci-dessous pour ouvrir le site
+Il suffit de faire les commande ci-dessous pour ouvrir le site
 
-- firefox index.html
+- php -S localhost:8080
+- firefox http://localhost:8080/index.php
 
 # Crédits
 
