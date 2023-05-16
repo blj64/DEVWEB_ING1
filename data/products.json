@@ -8,14 +8,14 @@
             "cover" : "img1.jpeg",
             "id" : "superbus"
         }, {
-            "name" : "L'Aventurier",
+            "name" : "LAventurier",
             "complement" : "Indochine",
             "stock" : 20,
             "prix" : 14.99,
             "cover" : "img2.jpeg",
             "id" : "indochine"
         }, {
-            "name" : "L'Homme pressé",
+            "name" : "LHomme pressé",
             "complement" : "Noir Desir",
             "stock" : 15,
             "prix" : 14.99,
@@ -23,7 +23,7 @@
             "id" : "NoirDesir"
         },
         {
-            "name" : "J't'emmène au vent",
+            "name" : "Jtemmène au vent",
             "complement" : "Louise Attaque",
             "stock" : 5,
             "prix" : 9.99,

@@ -1,7 +1,7 @@
 <?php
 session_start();
 //header('Location:  varSession.inc.php');
-include "varSession.inc.php";
+include "bddData.php";
 ?>
 
 <!DOCTYPE html>
