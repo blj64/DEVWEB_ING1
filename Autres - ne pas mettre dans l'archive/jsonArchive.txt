@@ -1,0 +1,23 @@
+  /*
+    $json_file = '../data/products.json';
+    $json_str = file_get_contents($json_file);
+    $_SESSION["produits"] = json_decode($json_str, true);
+
+    $temp = array("panier" => 0);
+    foreach($_SESSION["produits"] as &$type)
+    {
+        foreach($type as &$produit)
+        {
+
+            
+            $produit["panier"] = 0;
+            $requete = "INSERT INTO products (name, complement, stock, prix, cover, id, type) 
+            VALUES ('".$produit["name"]."', '".$produit['complement']."', '".$produit["stock"]."', '".$produit["prix"]."', '".$produit["cover"]."', '".$produit["id"]."', 'songs')";
+
+            if ($bdd->query($requete) === TRUE) {
+                echo $requete."\n";
+              } else {
+                echo "Error: " . $requete . "<br>" . $bdd->error;
+              }
+        }
+    }*/
