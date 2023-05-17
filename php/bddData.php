@@ -24,8 +24,8 @@ if (!isset($_SESSION['loaded']))
     
         close($bdd);
     }
-    header('Location: ../index.php');
+    $_SESSION['loaded'] = true;
+    
     
 }
-
 ?>

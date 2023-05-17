@@ -1,5 +1,7 @@
 <?php
 include "header.php";
+
+
 ?>
 
 <section id="main-section">
@@ -19,7 +21,7 @@ include "header.php";
          
                 <?php
 
-                $total = 0;
+                $_SESSION["total"] = 0;
                 if (count($_SESSION["panier"]) == 0)
                 {
                     echo "Le panier est vide";
@@ -41,7 +43,7 @@ include "header.php";
                             }
                             
                         }
-                        $total = $total + $ligne["quantite"]*$ligne["prix"];
+                        $_SESSION["total"] = $_SESSION["total"] + $ligne["quantite"]*$ligne["prix"];
                         echo "</div>";
                     }
                 }
@@ -52,10 +54,10 @@ include "header.php";
             </div>
 
         <div id="panier-total">
-            <h1 id="total">Total     <span id="prix-total"><?php echo $total ?>€</span></h1>
+            <h1 id="total">Total     <span id="prix-total"><?php echo $_SESSION["total"] ?>€</span></h1>
            
-            <h3 id="sous-total">Sous total: <span id="sous-prix-total"><?php echo $total*0.8 ?>€</span></h3>
-            <a  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><div id="payment-link" >PAYMENT</div></a>
+            <h3 id="sous-total">Sous total: <span id="sous-prix-total"><?php echo $_SESSION["total"]*0.8 ?>€</span></h3>
+            <a href="../index.php?update=true"><div id="payment-link" >PAYMENT</div></a>
 
         </div>
     </div>

@@ -16,7 +16,7 @@ if (isset($_GET['category'])) {
 
             <div class=\"quantity\" data-reference=\"".$produit['id']."\" id=\"quantity-".$produit['id']."\">
                 <button class=\"quantity-less\" data-reference=\"".$produit['id']."\" id=\"quantity-less-".$produit['id']."\" onclick=\"decrementer('".$produit['id']."')\">-</button>
-                <span class=\"quantity-number\" min=\"0\" max=\"".$produit['stock']."\" data-reference=\"".$produit['id']."\" id=\"quantity-number-".$produit['id']."\" type=\"number\">".$produit['panier']."</span>
+                <span class=\"quantity-number\" min=\"0\" max=\"".$produit['stock']."\" data-reference=\"".$produit['id']."\" id=\"quantity-number-".$produit['id']."\" type=\"number\">0</span>
                 <button class=\"quantity-more\" data-reference=\"".$produit['id']."\"  id=\"quantity-more-".$produit['id']."\" onclick=\"incrementer('".$produit['id']."','".$produit['stock']."')\">+</button>
             </div>
             

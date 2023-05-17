@@ -1,30 +1,22 @@
 <?php 
-    
+    require_once('bdd.php');
     $newLogin = $_POST['login'];
     $newPassword = $_POST['password'];
     $newName = $_POST['nom'];
     $newUser = array($newName, $newLogin, md5($newPassword));
 
-    $verif = true;
-    if (($handle = fopen("../data/users.csv", "a+")) !== FALSE) {
-        while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE) && $verif) {
-            if($newLogin == $data[1] || $newName == $data[0]) {
-                $verif = false;
-                
-            }
-        }
-    }
-
+    //user existe deja dans la bdd
+    $exist = userExist($_POST["login"]);
     
-    if ($verif && ($_POST['password'] != "") && ($_POST['nom'] != "") && ($_POST['login'] != "")) {
-        fputcsv($handle, $newUser, ";");
+    if (!$exist && ($_POST['password'] != "") && ($_POST['nom'] != "") && ($_POST['login'] != "")) {
+        $_SESSION["error"] = "existTrue";
         $_SESSION["nom"] = $newName;
         $_SESSION["login"] = $newLogin;
-        fclose($handle);
-        header("Location: panier.php");
+        //ajout a la bdd
+        addUser($newUser);
+        header('Location: ../index.php');
 
     }else{
-        fclose($handle);
         header('Location: /php/signup.php?error=true');
     }
     

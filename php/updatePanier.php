@@ -15,6 +15,7 @@ foreach ($_SESSION["produits"] as $type)
                 $trouve = true;
 
                 $temp = array(
+                    'categorie' => $produit['categorie'],
                     'apercu' => $produit['cover'],
                     'reference' => $produit['name'],
                     'quantite' => $quantite,

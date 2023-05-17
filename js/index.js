@@ -109,6 +109,3 @@ function ajouterQuantitePanier(id) {
     // Suppression du formulaire de la page
     document.body.removeChild(form);
 }
-
-
-

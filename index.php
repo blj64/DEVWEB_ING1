@@ -1,25 +1,23 @@
 
 <?php 
     session_start();
-
+    require_once('./php/bdd.php');
+    if (isset($_GET["update"]))
+    {
+        update();
+    }
+    
     
     if (!isset($_SESSION["login"]))
     {
-        $verif = false;
-        if (($handle = fopen("./data/users.csv", "r")) !== FALSE) {
-            while ((($data = fgetcsv($handle, 1000, ";")) !== FALSE) && !$verif) {
-                if ($_POST["login"] == $data[1] && md5($_POST["password"]) == $data[2]) {
-                    $verif = true;
-                    $_SESSION["nom"] = $data[0];
-                    $_SESSION["login"] = $data[1];
-                    
-                }
-            }
-            fclose($handle);
+        $temp = array($_POST["login"], md5($_POST["password"]));
+        $isLoginGood = check($temp);
+        if ($isLoginGood == true)
+        {
             header('Location: /index.php');
         }
-
-        if (!$verif) {
+        else {
+            
             header('Location: /php/connexion.php?error=true');
             exit();
         }

@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 function open()
 {
     $serveur = 'localhost';
@@ -63,15 +64,105 @@ function read($bdd)
             
         }
     }
+    else
+    {
+        $tab = NULL;    
+    }
 
     return $tab;
 }
 function close($bdd)
 {
     $bdd->close();
-    echo "closed";
 }
 
+function update()
+{
+    $bdd = open();
+    
+    foreach ($_SESSION["panier"] as $value)
+    {
+        $x = 0;
+        $res = -1;
+        foreach ($_SESSION["produits"][$value["categorie"]] as $v)
+        {
+            if ($v["name"] == $value["reference"])
+            {
+                $res = $x;
+            }
+            $x = $x + 1;
+        }
+        if ($res != -1)
+        {
+            $name = $value["reference"];
+            $nb = $_SESSION["produits"][$value["categorie"]][$res]["stock"]-$value["quantite"];
+            $sql = "UPDATE products SET stock=".$nb." WHERE name='".$name."'";
+            
+            $result = mysqli_query($bdd, $sql);
+            mysqli_free_result($result);
+        }
+        
+    }
+
+    close($bdd);
+    //unset($_GET["update"]);
+    $_SESSION["panier"] = array();
+}
+
+function addUser($user)
+{
+    $bdd = open();
+    $sql = "INSERT INTO users (login, mdp, nom) 
+    VALUES ('".$user[1]."', '".$user[2]."','".$user[0]."');";
+
+    $result = mysqli_query($bdd, $sql);
+    mysqli_free_result($result);
+
+    close($bdd);
+}
+
+function userExist($login)
+{
+    $bdd = open();
+    $sql = "SELECT * FROM users WHERE login='".$login."';";
+
+    $result = mysqli_query($bdd, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        $res = true;
+    }
+    else
+    {
+        $res = false;
+    }
+    mysqli_free_result($result);
+
+    close($bdd);
+    return $res;
+}
+
+function check($user)
+{
+    $statut = false;
+    $bdd = open();
+
+    $sql = "SELECT nom FROM users WHERE (login,mdp)=('".$user[0]."','".$user[1]."');";
+
+    $result = mysqli_query($bdd, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION["nom"] = $row["nom"];
+        $_SESSION["login"] = $user[0];
+        $statut = true;
+    }
+    else
+    {
+        $statut = false;
+    }
+    mysqli_free_result($result);
+
+    close($bdd);
+    return $statut;
+}
 
 
 
